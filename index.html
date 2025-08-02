@@ -18,7 +18,10 @@
                         timemania: '#00FF48',
                         duplasena: '#A61324',
                         diadesorte: '#CB852F',
-                        supersete: '#A8CF45'
+                        supersete: '#A8CF45',
+                        loteca: '#4A90E2',
+                        federal: '#8B4513',
+                        maismilionaria: '#FF6B6B'
                     }
                 }
             }
@@ -100,6 +103,15 @@
                 <button onclick="switchTab('supersete')" class="tab-btn px-4 py-3 text-sm font-medium whitespace-nowrap border-b-3 border-transparent hover:border-supersete transition-colors" data-tab="supersete">
                     <span class="text-supersete">●</span> Super Sete
                 </button>
+                <button onclick="switchTab('loteca')" class="tab-btn px-4 py-3 text-sm font-medium whitespace-nowrap border-b-3 border-transparent hover:border-loteca transition-colors" data-tab="loteca">
+                    <span class="text-loteca">●</span> Loteca
+                </button>
+                <button onclick="switchTab('federal')" class="tab-btn px-4 py-3 text-sm font-medium whitespace-nowrap border-b-3 border-transparent hover:border-federal transition-colors" data-tab="federal">
+                    <span class="text-federal">●</span> Federal
+                </button>
+                <button onclick="switchTab('maismilionaria')" class="tab-btn px-4 py-3 text-sm font-medium whitespace-nowrap border-b-3 border-transparent hover:border-maismilionaria transition-colors" data-tab="maismilionaria">
+                    <span class="text-maismilionaria">●</span> + Milionária
+                </button>
             </div>
         </div>
     </nav>
@@ -119,6 +131,25 @@
                         </div>
                         <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">
                             Números selecionados: <span id="megasena-count" class="font-bold text-megasena">0</span>
+                        </div>
+						
+						<!-- Esquema de Apostas para Mega Sena-->
+                        <div class="mt-4 p-3 bg-diadesorte/10 rounded-lg">
+                            <p class="text-sm font-medium text-diadesorte mb-2">📊 Use o esquema para gerar números para a aposta (manual):</p>
+                            <div class="text-center">
+                                <a href="https://resumomegasena.netlify.app//" target="_blank" class="inline-block hover:opacity-90 transition-opacity">
+                                    <img src="https://i.postimg.cc/fy8w20Qn/Prt-Scr-capture-3.jpg" alt="Esquema de apostas Mega Sena" class="w-64 h-64 object-contain mx-auto rounded-lg shadow-md border border-gray-200 dark:border-gray-600" />
+                                </a>
+                            </div>
+                            <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-center">Clique na imagem para ir ao site e aplicar as regras.</p>
+							<br /><hr />
+							<p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-justify">
+								Somar o valor do "<b>Prêmio Estimado</b>" 
+								| Observar o valor do <b>Dia</b>, <b>Mês</b> e do <b>Concurso</b>" em <u>Próximo Sorteio</u>" 
+								| Observar o "<b>quarto número Sorteado</b>" 
+								| Observar o valor do <b>Dia</b> do "<u>Sorteio</u>" 
+								| Checar que tenha pelo menos um número com a mesma "<b>Terminação</b>". Ou seja são sete variações.
+							</p>
                         </div>
                     </div>
                 </div>
@@ -232,6 +263,29 @@
                         <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">
                             Números selecionados: <span id="quina-count" class="font-bold text-quina">0</span>
                         </div>
+						
+						<!-- Esquema de Apostas para Quina-->
+                        <div class="mt-4 p-3 bg-diadesorte/10 rounded-lg">
+                            <p class="text-sm font-medium text-diadesorte mb-2">📊 Use o esquema para gerar números para a aposta (manual):</p>
+                            <div class="text-center">
+                                <a href="https://resumoquina.netlify.app/" target="_blank" class="inline-block hover:opacity-90 transition-opacity">
+                                    <img src="https://i.postimg.cc/ZqDr9ZYJ/Prt-Scr-capture-2.jpg" alt="Esquema de apostas Mega Sena" class="w-64 h-64 object-contain mx-auto rounded-lg shadow-md border border-gray-200 dark:border-gray-600" />
+                                </a>
+                            </div>
+                            <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-center">Clique na imagem para ir ao site e aplicar as regras.</p>
+							<br /><hr />
+							<p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-justify">
+								Somar o valor do "<b>Prêmio Estimado</b>" 
+								| Observar o valor do <b>Dia</b>, <b>Mês</b> e do <b>Concurso</b>" em <u>Próximo Sorteio</u>" 
+								| Observar o "<b>quarto número Sorteado</b>" 
+								| Observar o valor do <b>Dia</b> do "<u>Sorteio</u>" 
+								| Checar que tenha pelo menos um número com a mesma "<b>Terminação</b>". Ou seja são sete variações.
+							</p>
+                        </div>
+						
+						
+						
+						
                     </div>
                 </div>
                 <div class="lg:col-span-2 space-y-6">
@@ -304,6 +358,28 @@
                         <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">
                             Números selecionados: <span id="lotofacil-count" class="font-bold text-lotofacil">0</span>
                         </div>
+											<!-- Esquema de Apostas para Mega Sena-->
+                        <div class="mt-4 p-3 bg-diadesorte/10 rounded-lg">
+                            <p class="text-sm font-medium text-diadesorte mb-2">📊 Use o esquema para gerar números para a aposta (manual):</p>
+                            <div class="text-center">
+                                <a href="https://resumolotofacil.netlify.app/" target="_blank" class="inline-block hover:opacity-90 transition-opacity">
+                                    <img src="https://i.postimg.cc/D0wbvMst/Prt-Scr-capture.jpg" alt="Esquema de apostas Mega Sena" class="w-64 h-64 object-contain mx-auto rounded-lg shadow-md border border-gray-200 dark:border-gray-600" />
+                                </a>
+                            </div>
+                            <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-center">Clique na imagem para ir ao site e aplicar as regras.</p>
+							<br /><hr />
+							<p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-justify">
+								Somar o valor do "<b>Prêmio Estimado</b>" 
+								| Observar o valor do <b>Dia</b>, <b>Mês</b> e do <b>Concurso</b>" em <u>Próximo Sorteio</u>" 
+								| Observar o "<b>quarto número Sorteado</b>" 
+								| Observar o valor do <b>Dia</b> do "<u>Sorteio</u>" 
+								| Checar que tenha pelo menos um número com a mesma "<b>Terminação</b>". Ou seja são sete variações.
+							</p>
+                        </div>
+						
+						
+						
+						
                     </div>
                 </div>
                 <div class="lg:col-span-2 space-y-6">
@@ -384,6 +460,28 @@
                                 <option value="10">Vasco</option>
                             </select>
                         </div>
+						<!-- Esquema de Apostas para Timemania-->
+                        <div class="mt-4 p-3 bg-diadesorte/10 rounded-lg">
+                            <p class="text-sm font-medium text-diadesorte mb-2">📊 Use o esquema para gerar números para a aposta (manual):</p>
+                            <div class="text-center">
+                                <a href="https://resumotimemania.netlify.app/" target="_blank" class="inline-block hover:opacity-90 transition-opacity">
+                                    <img src="https://i.postimg.cc/VNLyRyyS/Prt-Scr-capture.jpg" alt="Esquema de apostas Mega Sena" class="w-64 h-64 object-contain mx-auto rounded-lg shadow-md border border-gray-200 dark:border-gray-600" />
+                                </a>
+                            </div>
+                            <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-center">Clique na imagem para ir ao site e aplicar as regras.</p>
+							<br /><hr />
+							<p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-justify">
+								Somar o valor do "<b>Prêmio Estimado</b>" 
+								| Observar o valor do <b>Dia</b>, <b>Mês</b> e do <b>Concurso</b>" em <u>Próximo Sorteio</u>" 
+								| Observar o "<b>quarto número Sorteado</b>" 
+								| Observar o valor do <b>Dia</b> do "<u>Sorteio</u>" 
+								| Checar que tenha pelo menos um número com a mesma "<b>Terminação</b>". Ou seja são sete variações.
+							</p>
+                        </div>
+						
+						
+						
+						
                     </div>
                 </div>
                 <div class="lg:col-span-2 space-y-6">
@@ -423,6 +521,22 @@
                         <div class="grid grid-cols-10 gap-1" id="lotomania-grid"></div>
                         <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">
                             Números selecionados: <span id="lotomania-count" class="font-bold text-lotomania">0</span>/50
+                        </div>
+						<!-- Esquema de Apostas para Lotomania-->
+                        <div class="mt-4 p-3 bg-diadesorte/10 rounded-lg">
+                            <p class="text-sm font-medium text-diadesorte mb-2">📊 Use o esquema para gerar números para a aposta (manual):</p>
+                            <div class="text-center">
+                                <a href="https://resumolotomania.netlify.app//" target="_blank" class="inline-block hover:opacity-90 transition-opacity">
+                                    <img src="https://i.postimg.cc/yNJTyWbD/Prt-Scr-capture-3.jpg" alt="Esquema de apostas Mega Sena" class="w-64 h-64 object-contain mx-auto rounded-lg shadow-md border border-gray-200 dark:border-gray-600" />
+                                </a>
+                            </div>
+                            <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-center">Clique na imagem para ir ao site e aplicar as regras.</p>
+							<br /><hr />
+							<p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-justify">
+								Somar o valor do "<b>Prêmio Estimado</b>" 
+								| Observar o valor do <b>Dia</b>, <b>Mês</b> e do <b>Concurso</b>" em <u>Próximo Sorteio</u>" 
+								| Checar que tenha pelo menos um número com a mesma "<b>Terminação</b>". Ou seja são sete variações.
+							</p>
                         </div>
                     </div>
                 </div>
@@ -489,6 +603,24 @@
                             <p class="text-sm text-duplasena font-medium">
                                 ⚡ Vantagem: Um único jogo concorre em DOIS sorteios no mesmo concurso!
                             </p>
+                        </div>
+				       <!-- Esquema de Apostas para Dupla Sena-->
+                        <div class="mt-4 p-3 bg-diadesorte/10 rounded-lg">
+                            <p class="text-sm font-medium text-diadesorte mb-2">📊 Use o esquema para gerar números para a aposta (manual):</p>
+                            <div class="text-center">
+                                <a href="https://resumoduplasena.netlify.app/" target="_blank" class="inline-block hover:opacity-90 transition-opacity">
+                                    <img src="https://i.postimg.cc/Bb5JXT9H/Prt-Scr-capture-5.jpg" alt="Esquema de apostas Mega Sena" class="w-64 h-64 object-contain mx-auto rounded-lg shadow-md border border-gray-200 dark:border-gray-600" />
+                                </a>
+                            </div>
+                            <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-center">Clique na imagem para ir ao site e aplicar as regras.</p>
+							<br /><hr />
+							<p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-justify">
+								Somar o valor do "<b>Prêmio Estimado</b>" 
+								| Observar o valor do <b>Dia</b>, <b>Mês</b> e do <b>Concurso</b>" em <u>Próximo Sorteio</u>" 
+								| Observar o "<b>quarto número Sorteado</b>" 
+								| Observar o valor do <b>Dia</b> do "<u>Sorteio</u>" 
+								| Checar que tenha pelo menos um número com a mesma "<b>Terminação</b>". Ou seja são sete variações.
+							</p>
                         </div>
                     </div>
                 </div>
@@ -591,6 +723,25 @@
                                 <option value="11">Novembro</option>
                                 <option value="12">Dezembro</option>
                             </select>
+                        </div>
+                        
+                        <!-- Esquema de Apostas para Dia de Sorte-->
+                        <div class="mt-4 p-3 bg-diadesorte/10 rounded-lg">
+                            <p class="text-sm font-medium text-diadesorte mb-2">📊 Use o esquema para gerar números para a aposta (manual):</p>
+                            <div class="text-center">
+                                <a href="https://resumodiadesorte.netlify.app/" target="_blank" class="inline-block hover:opacity-90 transition-opacity">
+                                    <img src="https://i.postimg.cc/g24nRvRq/Prt-Scr-capture.jpg" alt="Esquema de apostas Dia de Sorte" class="w-64 h-64 object-contain mx-auto rounded-lg shadow-md border border-gray-200 dark:border-gray-600" />
+                                </a>
+                            </div>
+                            <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-center">Clique na imagem para ir ao site e aplicar as regras.</p>
+							<br /><hr />
+							<p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-justify">
+								Somar o valor do "<b>Prêmio Estimado</b>" 
+								| Observar o valor do <b>Dia</b>, <b>Mês</b> e do <b>Concurso</b>" em <u>Próximo Sorteio</u>" 
+								| Observar o "<b>quarto número Sorteado</b>" 
+								| Observar o valor do <b>Dia</b> do "<u>Sorteio</u>" 
+								| Checar que tenha pelo menos um número com a mesma "<b>Terminação</b>". Ou seja são sete variações.
+							</p>
                         </div>
                     </div>
                 </div>
@@ -789,6 +940,24 @@
                                 🎯 Jogo selecionado: <span id="supersete-selected" class="font-bold">- - - - - - -</span>
                             </p>
                         </div>
+						<!-- Esquema de Apostas para Super Sete-->
+                        <div class="mt-4 p-3 bg-diadesorte/10 rounded-lg">
+                            <p class="text-sm font-medium text-diadesorte mb-2">📊 Use o esquema para gerar números para a aposta (manual):</p>
+                            <div class="text-center">
+                                <a href="https://resumosupersete.netlify.app/" target="_blank" class="inline-block hover:opacity-90 transition-opacity">
+                                    <img src="https://i.postimg.cc/QdtT5t6v/Prt-Scr-capture-4.jpg" alt="Esquema de apostas Mega Sena" class="w-64 h-64 object-contain mx-auto rounded-lg shadow-md border border-gray-200 dark:border-gray-600" />
+                                </a>
+                            </div>
+                            <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-center">Clique na imagem para ir ao site e aplicar as regras.</p>
+							<br /><hr />
+							<p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-justify">
+								Somar o valor do "<b>Prêmio Estimado</b>" 
+								| Observar o valor do <b>Dia</b>, <b>Mês</b> e do <b>Concurso</b>" em <u>Próximo Sorteio</u>" 
+								| Observar o "<b>quarto número Sorteado</b>" 
+								| Observar o valor do <b>Dia</b> do "<u>Sorteio</u>" 
+								| Checar que tenha pelo menos um número com a mesma "<b>Terminação</b>". Ou seja são sete variações.
+							</p>
+                        </div>
                     </div>
                 </div>
                 <div class="lg:col-span-2 space-y-6">
@@ -837,6 +1006,198 @@
                 </div>
             </div>
         </div>
+
+        <!-- Loteca Tab -->
+        <div id="loteca" class="tab-content hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <div class="lg:col-span-2">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h2 class="text-xl font-bold text-loteca mb-4">Loteca - Palpites nos 14 Jogos</h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Marque 1 (coluna 1), X (empate) ou 2 (coluna 2) para cada jogo</p>
+                        
+                        <div class="space-y-3" id="loteca-grid">
+                            <!-- Games will be generated -->
+                        </div>
+                        
+                        <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+                            Palpites marcados: <span id="loteca-count" class="font-bold text-loteca">0</span>/14
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">💰 Valor da Aposta</h3>
+                        <div class="text-center p-4 bg-loteca text-white rounded-lg">
+                            <div class="text-2xl font-bold">R$ 3,00</div>
+                            <div class="text-sm">Aposta simples (14 palpites)</div>
+                        </div>
+                        <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+                            <p><strong>Prêmios:</strong></p>
+                            <p>• 14 acertos: Prêmio máximo (1º)</p>
+                            <p>• 13 acertos: 2º prêmio</p>
+                            <p>• 12 acertos: 3º prêmio</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">📝 Inserir Jogo</h3>
+                        <textarea id="loteca-input" class="w-full px-3 py-2 border border-gray-300 rounded-md text-base h-20 mb-3" placeholder="1, X, 2, 1, X, 2, 1, X, 2, 1, X, 2, 1, X (14 palpites)"></textarea>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button onclick="addGame('loteca')" class="bg-loteca text-white py-2 px-4 rounded-md hover:opacity-90">Adicionar</button>
+                            <button onclick="generateRandom('loteca')" class="bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600">Aleatório</button>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">🎲 Jogos da Loteca</h3>
+                        <div id="loteca-games" class="space-y-2 max-h-60 overflow-y-auto">
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">Nenhum jogo adicionado ainda</p>
+                        </div>
+                        <button onclick="clearGames('loteca')" class="w-full mt-3 bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600">Limpar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Federal Tab -->
+        <div id="federal" class="tab-content hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <div class="lg:col-span-2">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h2 class="text-xl font-bold text-federal mb-4">Federal - Número com 5 Dígitos</h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Escolha ou digite um número de 00000 a 99999</p>
+                        
+                        <div class="text-center mb-4">
+                            <input type="text" id="federal-number" class="text-3xl font-bold text-center p-4 border-2 border-federal rounded-lg w-full max-w-xs bg-gray-50 dark:bg-gray-700" placeholder="00000" maxlength="5">
+                        </div>
+                        
+                        <div class="grid grid-cols-2 gap-3 max-w-xs mx-auto">
+                            <button onclick="generateFederalRandom()" class="bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600">Gerar Aleatório</button>
+                            <button onclick="clearFederalNumber()" class="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600">Limpar</button>
+                        </div>
+                        
+                        <div class="mt-4 p-3 bg-federal/10 rounded-lg">
+                            <p class="text-sm text-federal font-medium">
+                                💡 Dica: Você pode comprar vários bilhetes com números diferentes para aumentar suas chances!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">💰 Valor da Aposta</h3>
+                        <div class="text-center p-4 bg-federal text-white rounded-lg">
+                            <div class="text-2xl font-bold">R$ 10,00</div>
+                            <div class="text-sm">Bilhete único</div>
+                        </div>
+                        <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+                            <p><strong>Prêmios:</strong></p>
+                            <p>• 1º Prêmio: R$ 500.000,00</p>
+                            <p>• 2º Prêmio: R$ 27.000,00</p>
+                            <p>• 3º Prêmio: R$ 24.000,00</p>
+                            <p>• 4º Prêmio: R$ 19.000,00</p>
+                            <p>• 5º Prêmio: R$ 18.329,00</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">📝 Inserir Jogo</h3>
+                        <textarea id="federal-input" class="w-full px-3 py-2 border border-gray-300 rounded-md text-base h-20 mb-3" placeholder="12345 (número de 5 dígitos)"></textarea>
+                        <div class="grid grid-cols-2 gap-3">
+                            <button onclick="addGame('federal')" class="bg-federal text-white py-2 px-4 rounded-md hover:opacity-90">Adicionar</button>
+                            <button onclick="generateRandom('federal')" class="bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600">Aleatório</button>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">🎲 Jogos da Federal</h3>
+                        <div id="federal-games" class="space-y-2 max-h-60 overflow-y-auto">
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">Nenhum jogo adicionado ainda</p>
+                        </div>
+                        <button onclick="clearGames('federal')" class="w-full mt-3 bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600">Limpar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mais Milionária Tab -->
+        <div id="maismilionaria" class="tab-content hidden">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+                <div class="lg:col-span-2">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h2 class="text-xl font-bold text-maismilionaria mb-4">+ Milionária - 6 números + 2 trevos</h2>
+                        <p class="text-sm text-gray-600 dark:text-gray-400 mb-4">Selecione 6 números de 01 a 50 e 2 trevos de 01 a 06</p>
+                        
+                        <h3 class="text-md font-bold text-maismilionaria mb-2">Números (01 a 50)</h3>
+                        <div class="grid grid-cols-10 gap-2 mb-6" id="maismilionaria-numbers-grid"></div>
+                        <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
+                            Números selecionados: <span id="maismilionaria-numbers-count" class="font-bold text-maismilionaria">0</span>/6
+                        </div>
+                        
+                        <h3 class="text-md font-bold text-maismilionaria mb-2">Trevos da Sorte (01 a 06)</h3>
+                        <div class="grid grid-cols-6 gap-2 max-w-xs" id="maismilionaria-trevos-grid"></div>
+                        <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+                            Trevos selecionados: <span id="maismilionaria-trevos-count" class="font-bold text-maismilionaria">0</span>/2
+                        </div>
+						<!-- Esquema de Apostas para + Milionária-->
+                        <div class="mt-4 p-3 bg-diadesorte/10 rounded-lg">
+                            <p class="text-sm font-medium text-diadesorte mb-2">📊 Use o esquema para gerar números para a aposta (manual):</p>
+                            <div class="text-center">
+                                <a href="https://resumomaismilionaria.netlify.app/" target="_blank" class="inline-block hover:opacity-90 transition-opacity">
+                                    <img src="https://i.postimg.cc/rwGqz5Wq/Prt-Scr-capture-2.jpg" alt="Esquema de apostas Mega Sena" class="w-64 h-64 object-contain mx-auto rounded-lg shadow-md border border-gray-200 dark:border-gray-600" />
+                                </a>
+                            </div>
+                            <p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-center">Clique na imagem para ir ao site e aplicar as regras.</p>
+							<br /><hr />
+							<p class="text-xs text-gray-600 dark:text-gray-400 mt-2 text-justify">
+								Somar o valor do "<b>Prêmio Estimado</b>" 
+								| Observar o valor do <b>Dia</b>, <b>Mês</b> e do <b>Concurso</b>" em <u>Próximo Sorteio</u>" 
+								| Observar o "<b>quarto número Sorteado</b>" 
+								| Observar o valor do <b>Dia</b> do "<u>Sorteio</u>" 
+								| Checar que tenha pelo menos um número com a mesma "<b>Terminação</b>". Ou seja são sete variações.
+							</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:col-span-2 space-y-6">
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">💰 Valor da Aposta</h3>
+                        <div class="text-center p-4 bg-maismilionaria text-white rounded-lg">
+                            <div class="text-2xl font-bold">R$ 6,00</div>
+                            <div class="text-sm">Aposta simples (6 números + 2 trevos)</div>
+                        </div>
+                        <div class="mt-4 text-sm text-gray-600 dark:text-gray-400">
+                            <p><strong>Prêmios:</strong></p>
+                            <p>• 6 números + 2 trevos: Prêmio mínimo de R$ 10 milhões</p>
+                            <p>• 6 números + 1 trevo: 2º prêmio</p>
+                            <p>• 6 números + 0 trevos: 3º prêmio</p>
+                            <p>• 5 números + 2 trevos: 4º prêmio</p>
+                            <p>• E mais 6 faixas de premiação!</p>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">📝 Inserir Jogo</h3>
+                        <div class="space-y-3">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Números:</label>
+                                <textarea id="maismilionaria-numbers-input" class="w-full px-3 py-2 border border-gray-300 rounded-md text-base h-16" placeholder="01, 02, 03, 04, 05, 06"></textarea>
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">Trevos:</label>
+                                <input type="text" id="maismilionaria-trevos-input" class="w-full px-3 py-2 border border-gray-300 rounded-md text-base" placeholder="01, 02">
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-3 mt-3">
+                            <button onclick="addGame('maismilionaria')" class="bg-maismilionaria text-white py-2 px-4 rounded-md hover:opacity-90">Adicionar</button>
+                            <button onclick="generateRandom('maismilionaria')" class="bg-gray-500 text-white py-2 px-4 rounded-md hover:bg-gray-600">Aleatório</button>
+                        </div>
+                    </div>
+                    <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-lg">
+                        <h3 class="text-lg font-bold text-gray-800 dark:text-white mb-4">🎲 Jogos da + Milionária</h3>
+                        <div id="maismilionaria-games" class="space-y-2 max-h-60 overflow-y-auto">
+                            <p class="text-gray-500 dark:text-gray-400 text-sm">Nenhum jogo adicionado ainda</p>
+                        </div>
+                        <button onclick="clearGames('maismilionaria')" class="w-full mt-3 bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600">Limpar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Summary Panel -->
@@ -851,6 +1212,8 @@
     <script>
         // Global variables
         let selectedNumbers = {};
+        let selectedTrevos = {};
+        let lotecaResults = {};
         let games = {};
         let currentTab = 'megasena';
 
@@ -863,7 +1226,10 @@
             timemania: { min: 10, max: 10, range: 80, price: 3.50 },
             duplasena: { min: 6, max: 15, range: 50, price: 2.50 },
             diadesorte: { min: 7, max: 15, range: 31, price: 2.00 },
-            supersete: { min: 7, max: 7, range: 10, price: 2.50 }
+            supersete: { min: 7, max: 7, range: 10, price: 2.50 },
+            loteca: { min: 14, max: 14, range: 14, price: 3.00 },
+            federal: { min: 1, max: 1, range: 99999, price: 10.00 },
+            maismilionaria: { min: 6, max: 12, range: 50, price: 6.00 }
         };
 
         // Initialize
@@ -876,15 +1242,156 @@
         function initializeLotteries() {
             Object.keys(lotteryConfig).forEach(lottery => {
                 selectedNumbers[lottery] = new Set();
+                selectedTrevos[lottery] = new Set();
+                lotecaResults[lottery] = {};
                 games[lottery] = [];
+                
                 if (lottery === 'megasena' || lottery === 'quina' || lottery === 'lotofacil' || lottery === 'timemania' || lottery === 'duplasena' || lottery === 'diadesorte') {
                     initializeNumbersGrid(lottery);
                 } else if (lottery === 'lotomania') {
                     initializeLotomaniaGrid();
                 } else if (lottery === 'supersete') {
                     initializeSuperSeteSelection();
+                } else if (lottery === 'loteca') {
+                    initializeLotecaGrid();
+                } else if (lottery === 'maismilionaria') {
+                    initializeMaisMilionariaGrids();
                 }
             });
+        }
+
+        // Initialize Loteca grid (14 games with 1/X/2 options)
+        function initializeLotecaGrid() {
+            const grid = document.getElementById('loteca-grid');
+            if (!grid) return;
+
+            grid.innerHTML = '';
+            for (let i = 1; i <= 14; i++) {
+                const gameDiv = document.createElement('div');
+                gameDiv.className = 'flex items-center justify-between p-3 bg-gray-50 dark:bg-gray-700 rounded-lg';
+                gameDiv.innerHTML = `
+                    <span class="font-medium text-gray-700 dark:text-gray-300">Jogo ${i.toString().padStart(2, '0')}</span>
+                    <div class="flex gap-2">
+                        <button class="loteca-option w-8 h-8 bg-gray-200 dark:bg-gray-600 hover:bg-loteca hover:text-white rounded font-bold transition-colors" 
+                                onclick="selectLotecaResult(${i}, '1', this)" data-game="${i}" data-result="1">1</button>
+                        <button class="loteca-option w-8 h-8 bg-gray-200 dark:bg-gray-600 hover:bg-loteca hover:text-white rounded font-bold transition-colors" 
+                                onclick="selectLotecaResult(${i}, 'X', this)" data-game="${i}" data-result="X">X</button>
+                        <button class="loteca-option w-8 h-8 bg-gray-200 dark:bg-gray-600 hover:bg-loteca hover:text-white rounded font-bold transition-colors" 
+                                onclick="selectLotecaResult(${i}, '2', this)" data-game="${i}" data-result="2">2</button>
+                    </div>
+                `;
+                grid.appendChild(gameDiv);
+            }
+        }
+
+        // Select Loteca result
+        function selectLotecaResult(gameNumber, result, element) {
+            // Clear previous selection for this game
+            const gameButtons = document.querySelectorAll(`[data-game="${gameNumber}"]`);
+            gameButtons.forEach(btn => {
+                btn.classList.remove('selected', 'bg-loteca', 'text-white');
+                btn.classList.add('bg-gray-200', 'dark:bg-gray-600');
+            });
+
+            // Select new result
+            element.classList.add('selected', 'bg-loteca', 'text-white');
+            element.classList.remove('bg-gray-200', 'dark:bg-gray-600');
+            
+            lotecaResults['loteca'][gameNumber] = result;
+            updateLotecaCount();
+        }
+
+        function updateLotecaCount() {
+            const count = Object.keys(lotecaResults['loteca']).length;
+            const countElement = document.getElementById('loteca-count');
+            if (countElement) {
+                countElement.textContent = count;
+            }
+        }
+
+        // Initialize Mais Milionária grids
+        function initializeMaisMilionariaGrids() {
+            // Numbers grid (1-50)
+            const numbersGrid = document.getElementById('maismilionaria-numbers-grid');
+            if (numbersGrid) {
+                numbersGrid.innerHTML = '';
+                for (let i = 1; i <= 50; i++) {
+                    const cell = document.createElement('div');
+                    cell.className = `number-cell bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 p-2 text-center rounded-md cursor-pointer font-medium text-gray-800 dark:text-white flex items-center justify-center`;
+                    cell.textContent = i.toString().padStart(2, '0');
+                    cell.onclick = () => toggleMaisMilionariaNumber(i, cell);
+                    numbersGrid.appendChild(cell);
+                }
+            }
+
+            // Trevos grid (1-6)
+            const trevosGrid = document.getElementById('maismilionaria-trevos-grid');
+            if (trevosGrid) {
+                trevosGrid.innerHTML = '';
+                for (let i = 1; i <= 6; i++) {
+                    const cell = document.createElement('div');
+                    cell.className = `number-cell bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 p-3 text-center rounded-md cursor-pointer font-medium text-gray-800 dark:text-white flex items-center justify-center`;
+                    cell.innerHTML = `🍀<br>${i.toString().padStart(2, '0')}`;
+                    cell.onclick = () => toggleMaisMilionariaTrevo(i, cell);
+                    trevosGrid.appendChild(cell);
+                }
+            }
+        }
+
+        // Toggle Mais Milionária number
+        function toggleMaisMilionariaNumber(number, cell) {
+            const lottery = 'maismilionaria';
+            
+            if (selectedNumbers[lottery].has(number)) {
+                selectedNumbers[lottery].delete(number);
+                cell.classList.remove('selected');
+                cell.classList.add('bg-gray-100', 'dark:bg-gray-700');
+            } else {
+                if (selectedNumbers[lottery].size >= 6) {
+                    showAlert('Você pode selecionar no máximo 6 números na + Milionária');
+                    return;
+                }
+                selectedNumbers[lottery].add(number);
+                cell.classList.add('selected');
+                cell.classList.remove('bg-gray-100', 'dark:bg-gray-700');
+            }
+            updateMaisMilionariaCount('numbers');
+        }
+
+        // Toggle Mais Milionária trevo
+        function toggleMaisMilionariaTrevo(number, cell) {
+            const lottery = 'maismilionaria';
+            
+            if (selectedTrevos[lottery].has(number)) {
+                selectedTrevos[lottery].delete(number);
+                cell.classList.remove('selected');
+                cell.classList.add('bg-gray-100', 'dark:bg-gray-700');
+            } else {
+                if (selectedTrevos[lottery].size >= 2) {
+                    showAlert('Você pode selecionar no máximo 2 trevos na + Milionária');
+                    return;
+                }
+                selectedTrevos[lottery].add(number);
+                cell.classList.add('selected');
+                cell.classList.remove('bg-gray-100', 'dark:bg-gray-700');
+            }
+            updateMaisMilionariaCount('trevos');
+        }
+
+        // Update Mais Milionária count
+        function updateMaisMilionariaCount(type) {
+            const lottery = 'maismilionaria';
+            if (type === 'numbers') {
+                const countElement = document.getElementById('maismilionaria-numbers-count');
+                if (countElement) {
+                    countElement.textContent = selectedNumbers[lottery].size;
+                }
+            } else if (type === 'trevos') {
+                const countElement = document.getElementById('maismilionaria-trevos-count');
+                if (countElement) {
+                    countElement.textContent = selectedTrevos[lottery].size;
+                }
+            }
         }
 
         // Initialize Lotomania grid (00-99)
@@ -966,6 +1473,22 @@
             }
             superSeteSelected = Array(8).fill('-');
             updateSuperSeteDisplay();
+        }
+
+        // Federal number functions
+        function generateFederalRandom() {
+            const randomNumber = Math.floor(Math.random() * 100000).toString().padStart(5, '0');
+            const input = document.getElementById('federal-number');
+            if (input) {
+                input.value = randomNumber;
+            }
+        }
+
+        function clearFederalNumber() {
+            const input = document.getElementById('federal-number');
+            if (input) {
+                input.value = '';
+            }
         }
 
         // Clear selection function for specific lotteries
@@ -1058,14 +1581,20 @@
         // Add game
         function addGame(lottery) {
             const input = document.getElementById(`${lottery}-input`);
-            const gameText = input.value.trim();
+            let gameText = input.value.trim();
             
             if (!gameText) {
-                showAlert('Por favor, insira os números do jogo');
-                return;
+                if (lottery === 'federal') {
+                    const federalInput = document.getElementById('federal-number');
+                    gameText = federalInput.value.trim();
+                }
+                if (!gameText) {
+                    showAlert('Por favor, insira os dados do jogo');
+                    return;
+                }
             }
 
-            let numbers, teamName = '', monthName = '';
+            let numbers = [], teamName = '', monthName = '', trevos = [];
             const config = lotteryConfig[lottery];
 
             // Handle different lottery formats
@@ -1081,6 +1610,48 @@
                 numbers = gameText.split(/[,\s]+/).map(n => n.trim()).filter(n => n);
                 if (numbers.length !== 50) {
                     showAlert('Por favor, insira exatamente 50 números para a Lotomania');
+                    return;
+                }
+            } else if (lottery === 'loteca') {
+                // Loteca: expect 14 results (1, X, or 2)
+                const results = gameText.split(/[,\s]+/).map(r => r.trim().toUpperCase()).filter(r => r);
+                if (results.length !== 14) {
+                    showAlert('Por favor, insira exatamente 14 palpites para a Loteca (1, X ou 2)');
+                    return;
+                }
+                // Validate each result
+                for (let result of results) {
+                    if (!['1', 'X', '2'].includes(result)) {
+                        showAlert('Cada palpite deve ser 1, X ou 2');
+                        return;
+                    }
+                }
+                numbers = results;
+            } else if (lottery === 'federal') {
+                // Federal: expect 5-digit number
+                if (gameText.length !== 5 || !/^\d{5}$/.test(gameText)) {
+                    showAlert('Por favor, insira um número de exatamente 5 dígitos para a Federal');
+                    return;
+                }
+                numbers = [gameText];
+            } else if (lottery === 'maismilionaria') {
+                // Mais Milionária: expect 6 numbers + 2 trevos
+                numbers = gameText.split(/[,\s]+/).map(n => n.trim()).filter(n => n);
+                if (numbers.length !== 6) {
+                    showAlert('Por favor, insira exatamente 6 números para a + Milionária');
+                    return;
+                }
+                
+                const trevosInput = document.getElementById('maismilionaria-trevos-input');
+                const trevosText = trevosInput.value.trim();
+                if (!trevosText) {
+                    showAlert('Por favor, insira os trevos da sorte');
+                    return;
+                }
+                
+                trevos = trevosText.split(/[,\s]+/).map(t => t.trim()).filter(t => t);
+                if (trevos.length !== 2) {
+                    showAlert('Por favor, insira exatamente 2 trevos para a + Milionária');
                     return;
                 }
             } else {
@@ -1109,16 +1680,30 @@
                 monthName = monthSelect.options[monthSelect.selectedIndex].text;
             }
 
-            games[lottery].push({
+            const gameData = {
                 id: Date.now(),
                 numbers: numbers,
                 team: teamName,
                 month: monthName,
                 timestamp: new Date().toLocaleString('pt-BR')
-            });
+            };
+
+            if (trevos.length > 0) {
+                gameData.trevos = trevos;
+            }
+
+            games[lottery].push(gameData);
 
             updateGamesList(lottery);
             input.value = '';
+            
+            // Clear additional inputs
+            if (lottery === 'maismilionaria') {
+                document.getElementById('maismilionaria-trevos-input').value = '';
+            } else if (lottery === 'federal') {
+                document.getElementById('federal-number').value = '';
+            }
+            
             updateSummary();
         }
 
@@ -1132,20 +1717,35 @@
                 return;
             }
 
-            container.innerHTML = games[lottery].map((game, index) => `
-                <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-md">
-                    <div class="flex justify-between items-start">
-                        <div class="flex-1">
-                            <div class="font-medium text-sm">Jogo ${index + 1}</div>
-                            <div class="text-xs text-gray-600 dark:text-gray-400">${game.timestamp}</div>
-                            <div class="mt-1 text-sm">${lottery === 'supersete' ? game.numbers.join(' ') : game.numbers.join(', ')}</div>
-                            ${game.team ? `<div class="text-xs text-gray-600 dark:text-gray-400 mt-1">Time: ${game.team}</div>` : ''}
-                            ${game.month ? `<div class="text-xs text-gray-600 dark:text-gray-400 mt-1">Mês: ${game.month}</div>` : ''}
+            container.innerHTML = games[lottery].map((game, index) => {
+                let gameDisplay = '';
+                if (lottery === 'supersete') {
+                    gameDisplay = game.numbers.join(' ');
+                } else if (lottery === 'loteca') {
+                    gameDisplay = game.numbers.join(', ');
+                } else if (lottery === 'federal') {
+                    gameDisplay = game.numbers[0];
+                } else if (lottery === 'maismilionaria') {
+                    gameDisplay = `Números: ${game.numbers.join(', ')}<br>Trevos: ${game.trevos.join(', ')}`;
+                } else {
+                    gameDisplay = game.numbers.join(', ');
+                }
+
+                return `
+                    <div class="bg-gray-50 dark:bg-gray-700 p-3 rounded-md">
+                        <div class="flex justify-between items-start">
+                            <div class="flex-1">
+                                <div class="font-medium text-sm">Jogo ${index + 1}</div>
+                                <div class="text-xs text-gray-600 dark:text-gray-400">${game.timestamp}</div>
+                                <div class="mt-1 text-sm">${gameDisplay}</div>
+                                ${game.team ? `<div class="text-xs text-gray-600 dark:text-gray-400 mt-1">Time: ${game.team}</div>` : ''}
+                                ${game.month ? `<div class="text-xs text-gray-600 dark:text-gray-400 mt-1">Mês: ${game.month}</div>` : ''}
+                            </div>
+                            <button onclick="removeGame('${lottery}', ${game.id})" class="text-red-500 hover:text-red-700 text-lg ml-2">×</button>
                         </div>
-                        <button onclick="removeGame('${lottery}', ${game.id})" class="text-red-500 hover:text-red-700 text-lg ml-2">×</button>
                     </div>
-                </div>
-            `).join('');
+                `;
+            }).join('');
         }
 
         // Remove game
@@ -1165,20 +1765,98 @@
         // Generate random game
         function generateRandom(lottery) {
             const config = lotteryConfig[lottery];
-            const numbers = [];
             
-            while (numbers.length < config.min) {
-                const num = Math.floor(Math.random() * config.range) + 1;
-                if (!numbers.includes(num)) {
-                    numbers.push(num);
+            if (lottery === 'loteca') {
+                // Generate random results for 14 games
+                const results = [];
+                const options = ['1', 'X', '2'];
+                for (let i = 0; i < 14; i++) {
+                    results.push(options[Math.floor(Math.random() * 3)]);
+                }
+                const input = document.getElementById('loteca-input');
+                if (input) {
+                    input.value = results.join(', ');
+                }
+            } else if (lottery === 'federal') {
+                // Generate random 5-digit number
+                const randomNumber = Math.floor(Math.random() * 100000).toString().padStart(5, '0');
+                const input = document.getElementById('federal-input');
+                if (input) {
+                    input.value = randomNumber;
+                }
+            } else if (lottery === 'maismilionaria') {
+                // Generate 6 random numbers and 2 random trevos
+                const numbers = [];
+                while (numbers.length < 6) {
+                    const num = Math.floor(Math.random() * 50) + 1;
+                    if (!numbers.includes(num)) {
+                        numbers.push(num);
+                    }
+                }
+                numbers.sort((a, b) => a - b);
+                
+                const trevos = [];
+                while (trevos.length < 2) {
+                    const trevo = Math.floor(Math.random() * 6) + 1;
+                    if (!trevos.includes(trevo)) {
+                        trevos.push(trevo);
+                    }
+                }
+                trevos.sort((a, b) => a - b);
+                
+                const numbersInput = document.getElementById('maismilionaria-numbers-input');
+                const trevosInput = document.getElementById('maismilionaria-trevos-input');
+                if (numbersInput && trevosInput) {
+                    numbersInput.value = numbers.map(n => n.toString().padStart(2, '0')).join(', ');
+                    trevosInput.value = trevos.map(t => t.toString().padStart(2, '0')).join(', ');
+                }
+            } else {
+                // Standard number generation
+                const numbers = [];
+                const range = lottery === 'lotomania' ? 100 : config.range;
+                const startFrom = lottery === 'lotomania' ? 0 : 1;
+                
+                while (numbers.length < config.min) {
+                    const num = Math.floor(Math.random() * range) + startFrom;
+                    if (!numbers.includes(num)) {
+                        numbers.push(num);
+                    }
+                }
+                
+                numbers.sort((a, b) => a - b);
+                const input = document.getElementById(`${lottery}-input`);
+                if (input) {
+                    if (lottery === 'lotomania') {
+                        input.value = numbers.map(n => n.toString().padStart(2, '0')).join(', ');
+                    } else {
+                        input.value = numbers.map(n => n.toString().padStart(2, '0')).join(', ');
+                    }
                 }
             }
+        }
+
+        // Calculate game cost based on numbers selected
+        function calculateGameCost(lottery, numCount) {
+            const config = lotteryConfig[lottery];
             
-            numbers.sort((a, b) => a - b);
-            const input = document.getElementById(`${lottery}-input`);
-            if (input) {
-                input.value = numbers.map(n => n.toString().padStart(2, '0')).join(', ');
+            if (lottery === 'megasena') {
+                const costs = {6: 5, 7: 35, 8: 140, 9: 420, 10: 1050, 11: 2310, 12: 4620, 13: 8580, 14: 15015, 15: 25025, 16: 40040, 17: 61880, 18: 92820, 19: 135660, 20: 193800};
+                return costs[numCount] || config.price;
+            } else if (lottery === 'quina') {
+                const costs = {5: 2.5, 6: 15, 7: 52.5, 8: 157.5, 9: 420, 10: 945, 11: 1890, 12: 3465, 13: 5775, 14: 8820, 15: 12705};
+                return costs[numCount] || config.price;
+            } else if (lottery === 'lotofacil') {
+                const costs = {15: 3, 16: 48, 17: 408, 18: 2448, 19: 11628, 20: 46512};
+                return costs[numCount] || config.price;
+            } else if (lottery === 'duplasena') {
+                const costs = {6: 2.5, 7: 17.5, 8: 70, 9: 210, 10: 525, 11: 1155, 12: 2310, 13: 4290, 14: 7507.5, 15: 12512.5};
+                return costs[numCount] || config.price;
+            } else if (lottery === 'diadesorte') {
+                const costs = {7: 2, 8: 16, 9: 72, 10: 240, 11: 660, 12: 1560, 13: 3276, 14: 6216, 15: 11088};
+                return costs[numCount] || config.price;
             }
+            
+            return config.price;
         }
 
         // Update summary
@@ -1189,7 +1867,15 @@
             Object.keys(games).forEach(lottery => {
                 const gameCount = games[lottery].length;
                 totalGames += gameCount;
-                totalValue += gameCount * lotteryConfig[lottery].price;
+                
+                // Calculate total value considering game costs
+                games[lottery].forEach(game => {
+                    if (lottery === 'megasena' || lottery === 'quina' || lottery === 'lotofacil' || lottery === 'duplasena' || lottery === 'diadesorte') {
+                        totalValue += calculateGameCost(lottery, game.numbers.length);
+                    } else {
+                        totalValue += lotteryConfig[lottery].price;
+                    }
+                });
             });
 
             document.getElementById('summary').innerHTML = `
