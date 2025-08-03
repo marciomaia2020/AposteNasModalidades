@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Simples</title>
+</head>
+<body>
+    <h1>🧪 Teste Simples de API</h1>
+    <button onclick="testarAPI()">Testar API</button>
+    <button onclick="testarPOST()">Testar POST</button>
+    <div id="resultado"></div>
+
+    <script>
+        async function testarAPI() {
+            const div = document.getElementById('resultado');
+            div.innerHTML = '<p>🔄 Testando GET...</p>';
+            
+            try {
+                const response = await fetch('api.php?modalidade=megasena');
+                const result = await response.json();
+                div.innerHTML = `<p>✅ GET OK: ${JSON.stringify(result)}</p>`;
+            } catch (error) {
+                div.innerHTML = `<p>❌ Erro GET: ${error}</p>`;
+            }
+        }
+
+        async function testarPOST() {
+            const div = document.getElementById('resultado');
+            div.innerHTML = '<p>🔄 Testando POST...</p>';
+            
+            try {
+                const payload = {
+                    modalidade: 'megasena',
+                    jogo: {
+                        numbers: ['01', '02', '03', '04', '05', '06']
+                    }
+                };
+
+                const response = await fetch('api.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                div.innerHTML = `<p>✅ POST OK: ${JSON.stringify(result)}</p>`;
+            } catch (error) {
+                div.innerHTML = `<p>❌ Erro POST: ${error}</p>`;
+            }
+        }
+    </script>
+</body>
+</html>

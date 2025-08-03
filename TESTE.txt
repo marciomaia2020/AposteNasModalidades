@@ -1,0 +1,10 @@
+http://localhost/apostenasmodalidades/test_connection.php/
+http://localhost/apostenasmodalidades/teste.php
+http://localhost/apostenasmodalidades/test_save.php
+http://localhost/apostenasmodalidades/test_api.php
+
+
+
+http://localhost/apostenasmodalidades/teste_basico.php
+http://localhost/apostenasmodalidades/teste_direto.php
+http://localhost/apostenasmodalidades/debug_simples.html

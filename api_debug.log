@@ -1,0 +1,180 @@
+2025-08-03 12:55:41 - === Nova requisição ===
+2025-08-03 12:55:41 - Método: GET
+2025-08-03 12:55:41 - Conexão com banco OK
+2025-08-03 12:55:41 - Encontrados 1 jogos para megasena
+2025-08-03 12:55:43 - === Nova requisição ===
+2025-08-03 12:55:43 - Método: POST
+2025-08-03 12:55:43 - Conexão com banco OK
+2025-08-03 12:55:43 - Dados recebidos: {"modalidade":"megasena","jogo":{"numbers":["01","02","03","04","05","06"]}}
+2025-08-03 12:55:43 - Modalidade: megasena
+2025-08-03 12:55:43 - Jogo: Array
+(
+    [numbers] => Array
+        (
+            [0] => 01
+            [1] => 02
+            [2] => 03
+            [3] => 04
+            [4] => 05
+            [5] => 06
+        )
+
+)
+
+2025-08-03 12:55:43 - Tabela: megasena_jogos
+2025-08-03 12:55:43 - Números: 01,02,03,04,05,06
+2025-08-03 12:55:43 - IP: 127.0.0.1
+2025-08-03 12:55:44 - Jogo inserido com ID: 10
+2025-08-03 12:55:45 - === Nova requisição ===
+2025-08-03 12:55:45 - Método: GET
+2025-08-03 12:55:45 - Conexão com banco OK
+2025-08-03 12:55:45 - Encontrados 2 jogos para megasena
+2025-08-03 12:56:05 - === Nova requisição ===
+2025-08-03 12:56:05 - Método: GET
+2025-08-03 12:56:05 - Conexão com banco OK
+2025-08-03 12:56:05 - Encontrados 2 jogos para megasena
+2025-08-03 12:56:15 - === Nova requisição ===
+2025-08-03 12:56:15 - Método: POST
+2025-08-03 12:56:15 - Conexão com banco OK
+2025-08-03 12:56:15 - Dados recebidos: {"modalidade":"megasena","jogo":{"numbers":["01","02","03","04","05","06"]}}
+2025-08-03 12:56:15 - Modalidade: megasena
+2025-08-03 12:56:15 - Jogo: Array
+(
+    [numbers] => Array
+        (
+            [0] => 01
+            [1] => 02
+            [2] => 03
+            [3] => 04
+            [4] => 05
+            [5] => 06
+        )
+
+)
+
+2025-08-03 12:56:15 - Tabela: megasena_jogos
+2025-08-03 12:56:15 - Números: 01,02,03,04,05,06
+2025-08-03 12:56:15 - IP: 127.0.0.1
+2025-08-03 12:56:15 - Jogo inserido com ID: 11
+2025-08-03 12:56:45 - === Nova requisição ===
+2025-08-03 12:56:45 - Método: GET
+2025-08-03 12:56:45 - Conexão com banco OK
+2025-08-03 12:56:45 - Encontrados 3 jogos para megasena
+2025-08-03 12:56:46 - === Nova requisição ===
+2025-08-03 12:56:46 - Método: POST
+2025-08-03 12:56:46 - Conexão com banco OK
+2025-08-03 12:56:46 - Dados recebidos: {"modalidade":"megasena","jogo":{"numbers":["01","02","03","04","05","06"]}}
+2025-08-03 12:56:46 - Modalidade: megasena
+2025-08-03 12:56:46 - Jogo: Array
+(
+    [numbers] => Array
+        (
+            [0] => 01
+            [1] => 02
+            [2] => 03
+            [3] => 04
+            [4] => 05
+            [5] => 06
+        )
+
+)
+
+2025-08-03 12:56:46 - Tabela: megasena_jogos
+2025-08-03 12:56:46 - Números: 01,02,03,04,05,06
+2025-08-03 12:56:46 - IP: 127.0.0.1
+2025-08-03 12:56:46 - Jogo inserido com ID: 12
+2025-08-03 12:56:47 - === Nova requisição ===
+2025-08-03 12:56:47 - Método: GET
+2025-08-03 12:56:47 - Conexão com banco OK
+2025-08-03 12:56:47 - Encontrados 4 jogos para megasena
+2025-08-03 13:26:29 - === Nova requisição ===
+2025-08-03 13:26:29 - Método: GET
+2025-08-03 13:26:29 - Conexão com banco OK
+2025-08-03 13:26:29 - Encontrados 0 jogos para megasena
+2025-08-03 13:26:30 - === Nova requisição ===
+2025-08-03 13:26:30 - Método: GET
+2025-08-03 13:26:30 - Conexão com banco OK
+2025-08-03 13:26:30 - Encontrados 0 jogos para megasena
+2025-08-03 13:26:59 - === Nova requisição ===
+2025-08-03 13:26:59 - Método: POST
+2025-08-03 13:26:59 - Conexão com banco OK
+2025-08-03 13:26:59 - Dados recebidos: {"modalidade":"megasena","jogo":{"id":1754227619964,"numbers":["01","11","21","31","41","51"],"timestamp":"03/08/2025, 10:26:59"}}
+2025-08-03 13:27:00 - Modalidade: megasena
+2025-08-03 13:27:00 - Jogo: Array
+(
+    [id] => 1754227619964
+    [numbers] => Array
+        (
+            [0] => 01
+            [1] => 11
+            [2] => 21
+            [3] => 31
+            [4] => 41
+            [5] => 51
+        )
+
+    [timestamp] => 03/08/2025, 10:26:59
+)
+
+2025-08-03 13:27:00 - Tabela: megasena_jogos
+2025-08-03 13:27:00 - Números: 01,11,21,31,41,51
+2025-08-03 13:27:00 - IP: 127.0.0.1
+2025-08-03 13:27:00 - Jogo inserido com ID: 13
+2025-08-03 13:27:23 - === Nova requisição ===
+2025-08-03 13:27:23 - Método: POST
+2025-08-03 13:27:23 - Conexão com banco OK
+2025-08-03 13:27:23 - Dados recebidos: {"modalidade":"megasena","jogo":{"id":1754227643432,"numbers":["02","12","22","32","42","52"],"timestamp":"03/08/2025, 10:27:23"}}
+2025-08-03 13:27:23 - Modalidade: megasena
+2025-08-03 13:27:23 - Jogo: Array
+(
+    [id] => 1754227643432
+    [numbers] => Array
+        (
+            [0] => 02
+            [1] => 12
+            [2] => 22
+            [3] => 32
+            [4] => 42
+            [5] => 52
+        )
+
+    [timestamp] => 03/08/2025, 10:27:23
+)
+
+2025-08-03 13:27:23 - Tabela: megasena_jogos
+2025-08-03 13:27:23 - Números: 02,12,22,32,42,52
+2025-08-03 13:27:23 - IP: 127.0.0.1
+2025-08-03 13:27:23 - Jogo inserido com ID: 14
+2025-08-03 18:51:43 - === Nova requisição ===
+2025-08-03 18:51:43 - Método: GET
+2025-08-03 18:51:43 - Conexão com banco OK
+2025-08-03 18:51:43 - Encontrados 0 jogos para megasena
+2025-08-03 18:51:45 - === Nova requisição ===
+2025-08-03 18:51:45 - Método: GET
+2025-08-03 18:51:45 - Conexão com banco OK
+2025-08-03 18:51:45 - Encontrados 0 jogos para megasena
+2025-08-03 18:52:03 - === Nova requisição ===
+2025-08-03 18:52:03 - Método: POST
+2025-08-03 18:52:03 - Conexão com banco OK
+2025-08-03 18:52:03 - Dados recebidos: {"modalidade":"megasena","jogo":{"id":1754247123050,"numbers":["01","02","03","11","12","13"],"timestamp":"03/08/2025, 15:52:03"}}
+2025-08-03 18:52:03 - Modalidade: megasena
+2025-08-03 18:52:03 - Jogo: Array
+(
+    [id] => 1754247123050
+    [numbers] => Array
+        (
+            [0] => 01
+            [1] => 02
+            [2] => 03
+            [3] => 11
+            [4] => 12
+            [5] => 13
+        )
+
+    [timestamp] => 03/08/2025, 15:52:03
+)
+
+2025-08-03 18:52:03 - Tabela: megasena_jogos
+2025-08-03 18:52:03 - Números: 01,02,03,11,12,13
+2025-08-03 18:52:03 - IP: ::1
+2025-08-03 18:52:03 - Jogo inserido com ID: 15
