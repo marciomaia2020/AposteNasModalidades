@@ -2484,27 +2484,44 @@
             document.body.appendChild(modal);
         }
 // ADCIONADO POS PERSISTÊNCIA
-// ===== INTEGRAÇÃO COM BANCO DE DADOS =====
-const API_URL = 'api.php';
+// ===== INTEGRAÇÃO BANCO DE DADOS - VERSÃO FINAL =====
+console.log('🚀 Iniciando sistema de banco de dados');
 
-// Debug - console
-console.log('🚀 Sistema iniciado - API URL:', API_URL);
+// Função para mostrar notificações
+function mostrarNotificacao(mensagem, tipo = 'success') {
+    const div = document.createElement('div');
+    div.className = `fixed top-4 right-4 p-4 rounded-lg shadow-lg z-50 text-white transition-all`;
+    div.className += tipo === 'success' ? ' bg-green-500' : ' bg-red-500';
+    div.innerHTML = mensagem;
+    div.style.transform = 'translateX(100%)';
+    
+    document.body.appendChild(div);
+    
+    setTimeout(() => {
+        div.style.transform = 'translateX(0)';
+    }, 100);
+    
+    setTimeout(() => {
+        div.style.transform = 'translateX(100%)';
+        setTimeout(() => {
+            if (div.parentNode) {
+                div.parentNode.removeChild(div);
+            }
+        }, 300);
+    }, 4000);
+}
 
-// Função para salvar no banco com debug melhorado
-async function saveGameToDatabase(lottery, gameData) {
-    console.group('💾 Salvando jogo no banco');
-    console.log('Modalidade:', lottery);
-    console.log('Dados do jogo:', gameData);
+// Função para salvar no banco
+async function salvarNoBanco(modalidade, jogo) {
+    console.log('💾 Salvando no banco:', modalidade, jogo);
     
     try {
         const payload = {
-            modalidade: lottery,
-            jogo: gameData
+            modalidade: modalidade,
+            jogo: jogo
         };
         
-        console.log('Payload enviado:', payload);
-        
-        const response = await fetch(API_URL, {
+        const response = await fetch('api.php', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -2512,246 +2529,260 @@ async function saveGameToDatabase(lottery, gameData) {
             body: JSON.stringify(payload)
         });
         
-        console.log('Status da resposta:', response.status);
-        console.log('Headers da resposta:', response.headers);
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}`);
+        }
         
         const result = await response.json();
-        console.log('Resposta do servidor:', result);
+        console.log('📥 Resposta:', result);
         
         if (result.success) {
-            gameData.database_id = result.id;
-            console.log('✅ Jogo salvo com sucesso! ID:', result.id);
-            
-            // Feedback visual melhorado
-            showSuccessMessage(`Jogo salvo no banco! ID: ${result.id}`);
-            
+            console.log('✅ Jogo salvo! ID:', result.id);
+            jogo.database_id = result.id;
+            mostrarNotificacao(`✅ Jogo salvo no banco! ID: ${result.id}`, 'success');
+            return true;
         } else {
-            console.error('❌ Erro retornado pela API:', result.error);
-            showErrorMessage(`Erro: ${result.error}`);
+            console.error('❌ Erro:', result.error);
+            mostrarNotificacao(`❌ Erro: ${result.error}`, 'error');
+            return false;
         }
+        
     } catch (error) {
-        console.error('❌ Erro de rede/conexão:', error);
-        showErrorMessage(`Erro de conexão: ${error.message}`);
+        console.error('❌ Erro de rede:', error);
+        mostrarNotificacao(`❌ Erro de conexão: ${error.message}`, 'error');
+        return false;
     }
-    
-    console.groupEnd();
 }
 
-// Função para carregar do banco
-async function loadGamesFromDatabase(lottery) {
-    console.group(`📥 Carregando jogos da ${lottery}`);
-    
-    try {
-        const url = `${API_URL}?modalidade=${lottery}`;
-        console.log('URL de busca:', url);
-        
-        const response = await fetch(url);
-        console.log('Status da busca:', response.status);
-        
-        const result = await response.json();
-        console.log('Resultado da busca:', result);
-        
-        if (result.success && result.jogos && result.jogos.length > 0) {
-            console.log(`✅ Encontrados ${result.jogos.length} jogos`);
-            
-            // Limpar jogos existentes desta modalidade (apenas da interface)
-            games[lottery] = [];
-            
-            result.jogos.forEach((jogo, index) => {
-                console.log(`Processando jogo ${index + 1}:`, jogo);
-                
-                const gameData = {
-                    id: Date.now() + Math.random(), // ID único para o frontend
-                    database_id: jogo.id,
-                    timestamp: new Date(jogo.data_criacao).toLocaleString('pt-BR')
-                };
-                
-                // Processar conforme a modalidade
-                switch(lottery) {
-                    case 'timemania':
-                        gameData.numbers = jogo.numeros.split(',');
-                        gameData.team = jogo.time_coracao;
-                        break;
-                    case 'diadesorte':
-                        gameData.numbers = jogo.numeros.split(',');
-                        gameData.month = jogo.mes_sorte;
-                        break;
-                    case 'maismilionaria':
-                        gameData.numbers = jogo.numeros.split(',');
-                        gameData.trevos = jogo.trevos.split(',');
-                        break;
-                    case 'supersete':
-                        gameData.numbers = jogo.numeros.split('');
-                        break;
-                    case 'loteca':
-                        gameData.numbers = jogo.palpites.split(',');
-                        break;
-                    case 'federal':
-                        gameData.numbers = [jogo.numero];
-                        break;
-                    default:
-                        gameData.numbers = jogo.numeros.split(',');
-                        break;
-                }
-                
-                games[lottery].push(gameData);
-                console.log('Jogo adicionado à interface:', gameData);
-            });
-            
-            updateGamesList(lottery);
-            updateSummary();
-            console.log(`✅ ${result.jogos.length} jogos carregados com sucesso!`);
-        } else {
-            console.log(`ℹ️ Nenhum jogo encontrado para ${lottery}`);
-        }
-    } catch (error) {
-        console.error('❌ Erro ao carregar jogos:', error);
-    }
-    
-    console.groupEnd();
-}
-
-// Funções de feedback visual
-function showSuccessMessage(message) {
-    const div = document.createElement('div');
-    div.className = 'fixed top-4 right-4 bg-green-500 text-white p-4 rounded-lg shadow-lg z-50 transition-all';
-    div.innerHTML = `✅ ${message}`;
-    document.body.appendChild(div);
-    
-    setTimeout(() => {
-        div.remove();
-    }, 4000);
-}
-
-function showErrorMessage(message) {
-    const div = document.createElement('div');
-    div.className = 'fixed top-4 right-4 bg-red-500 text-white p-4 rounded-lg shadow-lg z-50 transition-all';
-    div.innerHTML = `❌ ${message}`;
-    document.body.appendChild(div);
-    
-    setTimeout(() => {
-        div.remove();
-    }, 6000);
-}
-
-// Interceptar addGame
-const originalAddGame = addGame;
+// Substituir a função addGame completamente
+const addGameOriginal = addGame;
 addGame = async function(lottery) {
     console.log('🎮 AddGame chamado para:', lottery);
     
-    const gamesBefore = games[lottery].length;
-    console.log('Jogos antes:', gamesBefore);
+    // Executar a lógica original primeiro
+    const input = document.getElementById(`${lottery}-input`);
+    let gameText = input.value.trim();
     
-    // Executar função original
-    originalAddGame(lottery);
-    
-    const gamesAfter = games[lottery].length;
-    console.log('Jogos depois:', gamesAfter);
-    
-    // Se novo jogo foi adicionado, salvar no banco
-    if (gamesAfter > gamesBefore) {
-        const lastGame = games[lottery][gamesAfter - 1];
-        console.log('Novo jogo detectado, salvando:', lastGame);
-        await saveGameToDatabase(lottery, lastGame);
-    } else {
-        console.log('Nenhum jogo novo foi adicionado');
+    if (!gameText) {
+        if (lottery === 'federal') {
+            const federalInput = document.getElementById('federal-number');
+            gameText = federalInput.value.trim();
+        }
+        if (!gameText) {
+            showAlert('Por favor, insira os dados do jogo');
+            return;
+        }
     }
+
+    let numbers = [], teamName = '', monthName = '', trevos = [];
+    const config = lotteryConfig[lottery];
+
+    // Processar conforme modalidade (código original)
+    if (lottery === 'supersete') {
+        if (gameText.length !== 7 || !/^\d{7}$/.test(gameText)) {
+            showAlert('Por favor, insira exatamente 7 números (um para cada coluna, ex: 1234567)');
+            return;
+        }
+        numbers = gameText.split('');
+    } else if (lottery === 'lotomania') {
+        numbers = gameText.split(/[,\s]+/).map(n => n.trim()).filter(n => n);
+        if (numbers.length !== 50) {
+            showAlert('Por favor, insira exatamente 50 números para a Lotomania');
+            return;
+        }
+    } else if (lottery === 'loteca') {
+        const results = gameText.split(/[,\s]+/).map(r => r.trim().toUpperCase()).filter(r => r);
+        if (results.length !== 14) {
+            showAlert('Por favor, insira exatamente 14 palpites para a Loteca (1, X ou 2)');
+            return;
+        }
+        for (let result of results) {
+            if (!['1', 'X', '2'].includes(result)) {
+                showAlert('Cada palpite deve ser 1, X ou 2');
+                return;
+            }
+        }
+        numbers = results;
+    } else if (lottery === 'federal') {
+        if (gameText.length !== 5 || !/^\d{5}$/.test(gameText)) {
+            showAlert('Por favor, insira um número de exatamente 5 dígitos para a Federal');
+            return;
+        }
+        numbers = [gameText];
+    } else if (lottery === 'maismilionaria') {
+        numbers = gameText.split(/[,\s]+/).map(n => n.trim()).filter(n => n);
+        if (numbers.length !== 6) {
+            showAlert('Por favor, insira exatamente 6 números para a + Milionária');
+            return;
+        }
+        
+        const trevosInput = document.getElementById('maismilionaria-trevos-input');
+        const trevosText = trevosInput.value.trim();
+        if (!trevosText) {
+            showAlert('Por favor, insira os trevos da sorte');
+            return;
+        }
+        
+        trevos = trevosText.split(/[,\s]+/).map(t => t.trim()).filter(t => t);
+        if (trevos.length !== 2) {
+            showAlert('Por favor, insira exatamente 2 trevos para a + Milionária');
+            return;
+        }
+    } else {
+        numbers = gameText.split(/[,\s]+/).map(n => n.trim()).filter(n => n);
+        if (numbers.length < config.min) {
+            showAlert(`Por favor, insira pelo menos ${config.min} números`);
+            return;
+        }
+    }
+
+    // Processar seleções especiais
+    if (lottery === 'timemania') {
+        const teamSelect = document.getElementById('timemania-team');
+        if (!teamSelect.value) {
+            showAlert('Por favor, selecione o time do coração');
+            return;
+        }
+        teamName = teamSelect.options[teamSelect.selectedIndex].text;
+    } else if (lottery === 'diadesorte') {
+        const monthSelect = document.getElementById('diadesorte-month');
+        if (!monthSelect.value) {
+            showAlert('Por favor, selecione o mês da sorte');
+            return;
+        }
+        monthName = monthSelect.options[monthSelect.selectedIndex].text;
+    }
+
+    // Criar objeto do jogo
+    const gameData = {
+        id: Date.now(),
+        numbers: numbers,
+        team: teamName,
+        month: monthName,
+        timestamp: new Date().toLocaleString('pt-BR')
+    };
+
+    if (trevos.length > 0) {
+        gameData.trevos = trevos;
+    }
+
+    // Adicionar à lista local
+    games[lottery].push(gameData);
+
+    // Salvar no banco
+    console.log('🔄 Salvando no banco...');
+    const salvou = await salvarNoBanco(lottery, gameData);
+    
+    if (salvou) {
+        console.log('✅ Jogo salvo com sucesso no banco');
+    } else {
+        console.log('⚠️ Jogo adicionado localmente, mas não foi salvo no banco');
+    }
+
+    // Atualizar interface
+    updateGamesList(lottery);
+    input.value = '';
+    
+    // Limpar inputs adicionais
+    if (lottery === 'maismilionaria') {
+        document.getElementById('maismilionaria-trevos-input').value = '';
+    } else if (lottery === 'federal') {
+        document.getElementById('federal-number').value = '';
+    }
+    
+    updateSummary();
 };
 
-// Interceptar removeGame para remover do banco
-const originalRemoveGame = removeGame;
-removeGame = async function(lottery, gameId) {
-    console.log('🗑️ RemoveGame chamado:', lottery, gameId);
+// Carregar jogos do banco quando a página carregar
+async function carregarJogosDoBanco(modalidade) {
+    console.log(`📥 Carregando jogos da ${modalidade}`);
     
-    const gameToRemove = games[lottery].find(game => game.id === gameId);
-    console.log('Jogo a ser removido:', gameToRemove);
-    
-    originalRemoveGame(lottery, gameId);
-    
-    if (gameToRemove && gameToRemove.database_id) {
-        console.log('Removendo do banco, ID:', gameToRemove.database_id);
-        try {
-            const response = await fetch(API_URL, {
-                method: 'DELETE',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    modalidade: lottery,
-                    id: gameToRemove.database_id
-                })
+    try {
+        const response = await fetch(`api.php?modalidade=${modalidade}`);
+        const result = await response.json();
+        
+        if (result.success && result.jogos.length > 0) {
+            console.log(`✅ Carregando ${result.jogos.length} jogos da ${modalidade}`);
+            
+            result.jogos.forEach(jogoBanco => {
+                const jogoFormatado = {
+                    id: Date.now() + Math.random(),
+                    database_id: jogoBanco.id,
+                    timestamp: new Date(jogoBanco.data_criacao).toLocaleString('pt-BR')
+                };
+                
+                // Processar conforme modalidade
+                switch(modalidade) {
+                    case 'timemania':
+                        jogoFormatado.numbers = jogoBanco.numeros.split(',');
+                        jogoFormatado.team = jogoBanco.time_coracao;
+                        break;
+                    case 'diadesorte':
+                        jogoFormatado.numbers = jogoBanco.numeros.split(',');
+                        jogoFormatado.month = jogoBanco.mes_sorte;
+                        break;
+                    case 'maismilionaria':
+                        jogoFormatado.numbers = jogoBanco.numeros.split(',');
+                        jogoFormatado.trevos = jogoBanco.trevos.split(',');
+                        break;
+                    case 'supersete':
+                        jogoFormatado.numbers = jogoBanco.numeros.split('');
+                        break;
+                    case 'loteca':
+                        jogoFormatado.numbers = jogoBanco.palpites.split(',');
+                        break;
+                    case 'federal':
+                        jogoFormatado.numbers = [jogoBanco.numero];
+                        break;
+                    default:
+                        jogoFormatado.numbers = jogoBanco.numeros.split(',');
+                        break;
+                }
+                
+                // Verificar se já existe
+                const jaExiste = games[modalidade].some(jogo => jogo.database_id === jogoBanco.id);
+                if (!jaExiste) {
+                    games[modalidade].push(jogoFormatado);
+                }
             });
             
-            const result = await response.json();
-            console.log('Resultado da remoção:', result);
-            
-            if (result.success) {
-                showSuccessMessage('Jogo removido do banco!');
-            }
-        } catch (error) {
-            console.error('❌ Erro ao remover do banco:', error);
+            updateGamesList(modalidade);
+            updateSummary();
         }
+    } catch (error) {
+        console.error(`❌ Erro ao carregar ${modalidade}:`, error);
+    }
+}
+
+// Interceptar funções de auto-add
+const autoAddStandardGameOriginal = autoAddStandardGame;
+autoAddStandardGame = async function(lottery) {
+    autoAddStandardGameOriginal(lottery);
+    
+    // Salvar o último jogo adicionado
+    if (games[lottery].length > 0) {
+        const ultimoJogo = games[lottery][games[lottery].length - 1];
+        await salvarNoBanco(lottery, ultimoJogo);
     }
 };
 
-// Interceptar clearGames
-const originalClearGames = clearGames;
-clearGames = async function(lottery) {
-    console.log('🧹 ClearGames chamado para:', lottery);
-    
-    // Remover todos do banco primeiro
-    for (const game of games[lottery]) {
-        if (game.database_id) {
-            console.log('Removendo jogo do banco, ID:', game.database_id);
-            try {
-                await fetch(API_URL, {
-                    method: 'DELETE',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        modalidade: lottery,
-                        id: game.database_id
-                    })
-                });
-            } catch (error) {
-                console.error('Erro ao limpar do banco:', error);
-            }
-        }
-    }
-    
-    originalClearGames(lottery);
-    showSuccessMessage('Todos os jogos foram removidos!');
-};
-
-// Carregar jogos ao trocar aba
-const originalSwitchTab = switchTab;
+// Carregar jogos na inicialização e mudança de abas
+const switchTabOriginal = switchTab;
 switchTab = function(tabName) {
-    console.log('🔄 Mudando para aba:', tabName);
+    switchTabOriginal(tabName);
     
-    originalSwitchTab(tabName);
-    
-    // Pequeno delay para garantir que a aba foi carregada
+    // Carregar jogos desta modalidade
     setTimeout(() => {
-        console.log(`Verificando se precisa carregar jogos para ${tabName}`);
-        console.log(`Jogos atuais em ${tabName}:`, games[tabName].length);
-        
-        // Sempre tentar carregar (para sincronizar com banco)
-        loadGamesFromDatabase(tabName);
+        carregarJogosDoBanco(tabName);
     }, 500);
 };
 
-// Carregar jogos na inicialização
-document.addEventListener('DOMContentLoaded', function() {
-    console.log('🚀 DOM carregado, iniciando carregamento dos jogos...');
-    
-    // Aguardar um pouco para garantir que tudo foi inicializado
-    setTimeout(() => {
-        console.log('Iniciando carregamento de todas as modalidades...');
-        Object.keys(lotteryConfig).forEach(lottery => {
-            console.log(`Carregando ${lottery}...`);
-            loadGamesFromDatabase(lottery);
-        });
-    }, 1000);
-});
+// Carregar jogos da mega-sena quando página carregar
+setTimeout(() => {
+    carregarJogosDoBanco('megasena');
+}, 2000);
 
-console.log('✅ Sistema de banco de dados configurado!');
+console.log('✅ Sistema de banco configurado e funcionando!');
 
 
     </script>
