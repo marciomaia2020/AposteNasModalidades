@@ -1,99 +1,121 @@
 <p>
 	<a href="https://loterias.caixa.gov.br/Paginas/Mega-Sena.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> | 
 	<a href="https://GerarPalpitesIndividualMegaSena.netlify.app" target="_blank"><span style="color:#1B9A67"><b>Gerador Palpites Individual</b></span></a> |
-	<a href="https://gerarpalpitesdigitosmegasena.netlify.app" target="_blank"><span style="color:#1B9A67"><b>Gerador Palpites Completo</b></span></a><br>
-	<a href="https://analisevisualmegasena.netlify.app" target="_blank"><span style="color:#1B9A67"><b>Análise Visual</b></span></a><br>
-	<a href="https://analiseprofissionalmegasena.netlify.app" target="_blank"><span style="color:#1B9A67"><b>Análise Profissional</b></span></a>
- 	<hr /><br />
+	<a href="https://gerarpalpitesdigitosmegasena.netlify.app" target="_blank"><span style="color:#1B9A67"><b>Gerador Palpites Completo</b></span></a></a> |
+	<a href="https://analisevisualmegasena.netlify.app" target="_blank"><span style="color:#1B9A67"><b>Análise Visual</b></span></a> |
+	<a href="https://analiseprofissionalmegasena.netlify.app" target="_blank"><span style="color:#1B9A67"><b>Análise Profissional</b></span></a> |
+	<a href="https://analisecombinatoriadoismegasena.netlify.app" target="_blank"><span style="color:#1B9A67"><b>Análise Combinatória</b></span></a> |
+	<a href="https://resumomegasena-i.netlify.app" target="_blank"><span style="color:#1B9A67"><b>Resumo</b></span></a>
+	<hr /><br />
 </p>
 
 <p>
 	<a href="https://loterias.caixa.gov.br/Paginas/Quina.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> | 
 	<a href="https://GerarPalpitesIndividualQuina.netlify.app" target="_blank"><span style="color:#260184"><b>Gerador Palpites Individual</b></span></a> |
-	<a href="https://gerarpalpitesdigitosquina.netlify.app" target="_blank"><span style="color:#260184"><b>Gerador Palpites Completo</b></span></a><br>
-	<a href="https://analisevisualquina.netlify.app" target="_blank"><span style="color:#260184"><b>Análise Visual</b></span></a><br>
-	<a href="https://analiseprofissionalquina.netlify.app" target="_blank"><span style="color:#260184"><b>Análise Profissional</b></span></a>
+	<a href="https://gerarpalpitesdigitosquina.netlify.app" target="_blank"><span style="color:#260184"><b>Gerador Palpites Completo</b></span></a> |
+	<a href="https://analisevisualquina.netlify.app" target="_blank"><span style="color:#260184"><b>Análise Visual</b></span></a> |
+	<a href="https://analiseprofissionalquina.netlify.app" target="_blank"><span style="color:#260184"><b>Análise Profissional</b></span></a> |
+	<a href="https://analisecombinatoriadoisquina.netlify.app" target="_blank"><span style="color:#260184"><b>Análise Combinatória</b></span></a> |
+	<a href="https://resumoquina-i.netlify.app" target="_blank"><span style="color:#260184"><b>Resumo</b></span></a>
 	<hr /><br />
 </p>
 
 <p>
 	<a href="https://loterias.caixa.gov.br/Paginas/Lotofacil.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> | 
 	<a href="https://GerarPalpitesIndividualLotofacil.netlify.app" target="_blank"><span style="color:#672666"><b>Gerador Palpites Individual</b></span></a> |
-	<a href="https://gerarpalpitesdigitoslotofacil.netlify.app" target="_blank"><span style="color:#672666"><b>Gerador Palpites Completo</b></span></a><br>
-	<a href="https://analisevisuallotofacil.netlify.app" target="_blank"><span style="color:#672666"><b>Análise Visual</b></span></a><br>
-	<a href="https://analiseprofissionallotofacil.netlify.app" target="_blank"><span style="color:#672666"><b>Análise Profissional</b></span></a>
+	<a href="https://gerarpalpitesdigitoslotofacil.netlify.app" target="_blank"><span style="color:#672666"><b>Gerador Palpites Completo</b></span></a> |
+	<a href="https://analisevisuallotofacil.netlify.app" target="_blank"><span style="color:#672666"><b>Análise Visual</b></span></a> |
+	<a href="https://analiseprofissionallotofacil.netlify.app" target="_blank"><span style="color:#672666"><b>Análise Profissional</b></span></a> |
+	<a href="https://analisecombinatoriadoislotofacio.netlify.app" target="_blank"><span style="color:#672666"><b>Análise Combinatória</b></span></a> |
+	<a href="https://resumolotofacil-i.netlify.app" target="_blank"><span style="color:#672666"><b>Resumo</b></span></a>
 	<hr /><br />
 </p>
 
 <p>
 	<a href="https://loterias.caixa.gov.br/Paginas/Timemania.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> | 
 	<a href="https://GerarPalpitesIndividualTimemania.netlify.app" target="_blank"><span style="color:#00FF48"><b>Gerador Palpites Individual</b></span></a> |
-	<a href="https://gerarpalpitesdigitostimemania.netlify.app" target="_blank"><span style="color:#00FF48"><b>Gerador Palpites Completo</b></span></a><br>
-	<a href="https://analisevisualtimemania.netlify.app" target="_blank"><span style="color:#00FF48"><b>Análise Visual</b></span></a><br>
-	<a href="https://analiseprofissionaltimemania.netlify.app" target="_blank"><span style="color:#00FF48"><b>Análise Profissional</b></span></a>
+	<a href="https://gerarpalpitesdigitostimemania.netlify.app" target="_blank"><span style="color:#00FF48"><b>Gerador Palpites Completo</b></span></a> |
+	<a href="https://analisevisualtimemania.netlify.app" target="_blank"><span style="color:#00FF48"><b>Análise Visual</b></span></a> |
+	<a href="https://analiseprofissionaltimemania.netlify.app" target="_blank"><span style="color:#00FF48"><b>Análise Profissional</b></span></a> |
+	<a href="https://analisecombinatoriadoistimemania.netlify.app" target="_blank"><span style="color:#00FF48"><b>Análise Combinatória</b></span></a> |
+	<a href="https://resumotimemania-i.netlify.app" target="_blank"><span style="color:#00FF48"><b>Resumo</b></span></a>
 	<hr /><br />
 </p>
 
 <p>
 	<a href="https://loterias.caixa.gov.br/Paginas/Lotomania.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> | 
 	<a href="https://GerarPalpitesIndividualLotomania.netlify.app" target="_blank"><span style="color:#E68527"><b>Gerador Palpites Individual</b></span></a> |
-	<a href="https://gerarpalpitesdigitoslotomania.netlify.app" target="_blank"><span style="color:#E68527"><b>Gerador Palpites Completo</b></span></a><br>
-	<a href="https://analisevisuallotomania.netlify.app" target="_blank"><span style="color:#E68527"><b>Análise Visual</b></span></a><br>
-	<a href="https://analiseprofissionallotomania.netlify.app" target="_blank"><span style="color:#E68527"><b>Análise Profissional</b></span></a>
+	<a href="https://gerarpalpitesdigitoslotomania.netlify.app" target="_blank"><span style="color:#E68527"><b>Gerador Palpites Completo</b></span></a> |
+	<a href="https://analisevisuallotomania.netlify.app" target="_blank"><span style="color:#E68527"><b>Análise Visual</b></span></a> |
+	<a href="https://analiseprofissionallotomania.netlify.app" target="_blank"><span style="color:#E68527"><b>Análise Profissional</b></span></a> |
+	<a href="https://analisecombinatoriadoislotomania.netlify.app" target="_blank"><span style="color:#E68527"><b>Análise Combinatória</b></span></a> |
+	<a href="https://resumolotomania-i.netlify.app" target="_blank"><span style="color:#E68527"><b>Resumo</b></span></a>
 	<hr /><br />
 </p>
 
 <p>
 	<a href="https://loterias.caixa.gov.br/Paginas/Dupla-Sena.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> | 
 	<a href="https://GerarPalpitesIndividualDuplaSena.netlify.app" target="_blank"><span style="color:#A61324"><b>Gerador Palpites Individual</b></span></a> |
-	<a href="https://gerarpalpitesdigitosduplasena.netlify.app" target="_blank"><span style="color:#A61324"><b>Gerador Palpites Completo</b></span></a><br>
-	<a href="https://analisevisualduplasena.netlify.app" target="_blank"><span style="color:#A61324"><b>Análise Visual</b></span></a><br>
-	<a href="https://analiseprofissionalduplasena.netlify.app" target="_blank"><span style="color:#A61324"><b>Análise Profissional</b></span></a>
+	<a href="https://gerarpalpitesdigitosduplasena.netlify.app" target="_blank"><span style="color:#A61324"><b>Gerador Palpites Completo</b></span></a> |
+	<a href="https://analisevisualduplasena.netlify.app" target="_blank"><span style="color:#A61324"><b>Análise Visual</b></span></a> |
+	<a href="https://analiseprofissionalduplasena.netlify.app" target="_blank"><span style="color:#A61324"><b>Análise Profissional</b></span></a> |
+	<a href="https://analisecombinatoriadoisduplasena.netlify.app" target="_blank"><span style="color:#A61324"><b>Análise Combinatória</b></span></a> |
+	<a href="https://resumoduplasena-i.netlify.app" target="_blank"><span style="color:#A61324"><b>Resumo</b></span></a>
 	<hr /><br />
 </p>
 
 <p>
 	<a href="https://loterias.caixa.gov.br/Paginas/Dia-de-Sorte.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> |
 	<a href="https://GerarPalpitesIndividualDiaDeSorte.netlify.app" target="_blank"><span style="color:#9932CC"><b>Gerador Palpites Individual</b></span></a> |
-	<a href="https://gerarpalpitesdigitosdiadesorte.netlify.app" target="_blank"><span style="color:#9932CC"><b>Gerador Palpites Completo</b></span></a><br>
-	<a href="https://analisevisualdiadesorte.netlify.app" target="_blank"><span style="color:#9932CC"><b>Análise Visual</b></span></a><br>
-	<a href="https://analiseprofissionaldiadesorte.netlify.app" target="_blank"><span style="color:#9932CC"><b>Análise Profissional</b></span></a>
+	<a href="https://gerarpalpitesdigitosdiadesorte.netlify.app" target="_blank"><span style="color:#9932CC"><b>Gerador Palpites Completo</b></span></a> |
+	<a href="https://analisevisualdiadesorte.netlify.app" target="_blank"><span style="color:#9932CC"><b>Análise Visual</b></span></a> |
+	<a href="https://analiseprofissionaldiadesorte.netlify.app" target="_blank"><span style="color:#9932CC"><b>Análise Profissional</b></span></a> |
+	<a href="https://analisecombinatoriadoisdiadesorte.netlify.app" target="_blank"><span style="color::#9932CC"><b>Análise Combinatória</b></span></a> |
+	<a href="https://resumodiadesorte-i.netlify.app" target="_blank"><span style="color:#9932CC"><b>Resumo</b></span></a>
 	<hr /><br />
 </p>
 
 <p>
 	<a href="https://loterias.caixa.gov.br/Paginas/Super-Sete.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> |
 	<a href="https://GerarPalpitesIndividualSuperSete.netlify.app" target="_blank"><span style="color:#FF8800"><b>Gerador Palpites Individual</b></span></a> |
-	<a href="https://gerarpalpitesdigitossupersete.netlify.app" target="_blank"><span style="color:#FF8800"><b>Gerador Palpites Completo</b></span></a><br>
-	<a href="https://analisevisualsupersete.netlify.app" target="_blank"><span style="color:#FF8800"><b>Análise Visual</b></span></a><br>
-	<a href="https://analiseprofissionalsupersete.netlify.app" target="_blank"><span style="color:#FF8800"><b>Análise Profissional</b></span></a>
+	<a href="https://gerarpalpitesdigitossupersete.netlify.app" target="_blank"><span style="color:#FF8800"><b>Gerador Palpites Completo</b></span></a> |
+	<a href="https://analisevisualsupersete.netlify.app" target="_blank"><span style="color:#FF8800"><b>Análise Visual</b></span></a> |
+	<a href="https://analiseprofissionalsupersete.netlify.app" target="_blank"><span style="color:#FF8800"><b>Análise Profissional</b></span></a> |
+	<a href="https://analisecombinatoriadoissupersete.netlify.app" target="_blank"><span style="color:#FF8800"><b>Análise Combinatória</b></span></a> |
+	<a href="https://resumosupersete-i.netlify.app" target="_blank"><span style="color:#FF8800"><b>Resumo</b></span></a>
 	<hr /><br />
 </p>
 
 <p>
 	<a href="https://loterias.caixa.gov.br/Paginas/Loteca.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> | 
 	<a href="https://GerarPalpitesIndividualloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Gerador Palpites Individual</b></span></a> |
-	<a href="https://gerarpalpitesdigitosloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Gerador Palpites Completo</b></span></a><br>
-	<a href="https://analisevisualloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Análise Visual</b></span></a><br>
-	<a href="https://analiseprofissionalloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Análise Profissional</b></span></a>
+	<a href="https://gerarpalpitesdigitosloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Gerador Palpites Completo</b></span></a> |
+	<a href="https://analisevisualloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Análise Visual</b></span></a> |
+	<a href="https://analiseprofissionalloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Análise Profissional</b></span></a> |
+	<a href="https://analisecombinatoriadoisloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Análise Combinatória</b></span></a> |
+	<a href="https://resumoloteca-i.netlify.app" target="_blank"><span style="color:#0066B3"><b>Resumo</b></span></a>
 	<hr /><br />
 </p>
 
 <p>
 	<a href="https://loterias.caixa.gov.br/Paginas/Federal.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> |
 	<a href="https://GerarPalpitesIndividualFederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Gerador Palpites Individual</b></span></a> |
-	<a href="https://gerarpalpitesdigitosfederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Gerador Palpites Completo</b></span></a><br>
-	<a href="https://analisevisualfederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Análise Visual</b></span></a><br>
-	<a href="https://analiseprofissionalfederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Análise Profissional</b></span></a>
+	<a href="https://gerarpalpitesdigitosfederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Gerador Palpites Completo</b></span></a> |
+	<a href="https://analisevisualfederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Análise Visual</b></span></a> |
+	<a href="https://analiseprofissionalfederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Análise Profissional</b></span></a> |
+	<a href="https://analisecombinatoriadoisfederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Análise Combinatória</b></span></a> |
+	<a href="https://resumofederal-i.netlify.app" target="_blank"><span style="color:#4192be"><b>Resumo</b></span></a>
 	<hr /><br />
 </p>
 
 <p>
 	<a href="https://loterias.caixa.gov.br/Paginas/Mais-Milionaria.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> |
 	<a href="https://GerarPalpitesIndividualMaisMilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Gerador Palpites Individual</b></span></a> |
-	<a href="https://gerarpalpitesdigitosmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Gerador Palpites Completo</b></span></a><br>
-	<a href="https://analisevisualmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Análise Visual</b></span></a><br>
-	<a href="https://analiseprofissionalmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Análise Profissional</b></span></a>
+	<a href="https://gerarpalpitesdigitosmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Gerador Palpites Completo</b></span></a> |
+	<a href="https://analisevisualmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Análise Visual</b></span></a> |
+	<a href="https://analiseprofissionalmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Análise Profissional</b></span></a> |
+	<a href="https://analisecombinatoriadoismegasena.netlify.app" target="_blank"><span style="color:#31357C"><b>Análise Combinatória</b></span></a> |
+	<a href="https://resumomaismilionaria-i.netlify.app" target="_blank"><span style="color:#31357C"><b>Resumo</b></span></a>
 	<hr /><br />
 </p>
 
@@ -101,6 +123,99 @@
 
 
 
+https://analisecombinatoriadoisdiadesorte.netlify.app/
+https://analisecombinatoriadoisduplasena.netlify.app/
+https://analisecombinatoriadoisfederal.netlify.app/
+https://analisecombinatoriadoisloteca.netlify.app/
+https://analisecombinatoriadoislotofacil.netlify.app/
+https://analisecombinatoriadoislotomania.netlify.app/
+https://analisecombinatoriadoismaismilionaria.netlify.app/
+https://analisecombinatoriadigitosquina.netlify.app/
+https://analisecombinatoriadoissupersete.netlify.app/
+https://analisecombinatordoisdigitostimemania.netlify.app/
+
+
+
+
+https://GerarPalpitesIndividualLoteca.netlify.app
+https://GerarPalpitesIndividualLotofacil.netlify.app
+https://GerarPalpitesIndividualLotomania.netlify.app
+https://GerarPalpitesIndividualMaisMilionaria.netlify.app
+https://GerarPalpitesIndividualMegaSena.netlify.app
+https://GerarPalpitesIndividualQuina.netlify.app
+https://GerarPalpitesIndividualSuperSete.netlify.app
+https://GerarPalpitesIndividualTimemania.netlify.app
+https://GerarPalpitesIndividualDiaDeSorte .netlify.app
+https://GerarPalpitesIndividualDuplaSena.netlify.app
+https://GerarPalpitesIndividualFederal.netlify.app
+
+
+
+https://analisevisualloteca.netlify.app
+https://analisevisuallotofacil.netlify.app
+https://analisevisuallotomania.netlify.app
+https://analisevisualmaismilionaria.netlify.app
+https://analisevisualmegasena.netlify.app
+https://analisevisualquina.netlify.app
+https://analisevisualsupersete.netlify.app
+https://analisevisualtimemania.netlify.app
+https://analisevisualdiadesorte.netlify.app
+https://analisevisualduplasena.netlify.app
+https://analisevisualfederal.netlify.app
+
+
+
+
+https://analisecombinatordoisdigitosloteca.netlify.app
+https://analisecombinatordoisdigitoslotofacil.netlify.app
+https://analisecombinatordoisdigitoslotomania.netlify.app
+https://analisecombinatordoisdigitosmaismilionaria.netlify.app
+https://analisecombinatordoisdigitosmegasena.netlify.app
+https://analisecombinatordoisdigitosquina.netlify.app
+https://analisecombinatordoisdigitossupersete.netlify.app
+https://analisecombinatordoisdigitostimemania.netlify.app
+https://analisecombinatordoisdigitosdiadesorte .netlify.app
+https://analisecombinatordoisdigitosduplasena.netlify.app
+https://analisecombinatordoisdigitosfederal.netlify.app
+
+
+https://analiseprofissionalloteca.netlify.app
+https://analiseprofissionallotofacil.netlify.app
+https://analiseprofissionallotomania.netlify.app
+https://analiseprofissionalmaismilionaria.netlify.app
+https://analiseprofissionalmegasena.netlify.app
+https://analiseprofissionalquina.netlify.app
+https://analiseprofissionalsupersete.netlify.app
+https://analiseprofissionaltimemania.netlify.app
+https://analiseprofissionaldiadesorte.netlify.app
+https://analiseprofissionalduplasena.netlify.app
+https://analiseprofissionalfederal.netlify.app
+
+
+
+https://gerarpalpitesdigitosloteca.netlify.app
+https://gerarpalpitesdigitoslotofacil.netlify.app
+https://gerarpalpitesdigitoslotomania.netlify.app
+https://gerarpalpitesdigitosmaismilionaria.netlify.app
+https://gerarpalpitesdigitosmegasena.netlify.app
+https://gerarpalpitesdigitosquina.netlify.app
+https://gerarpalpitesdigitossupersete.netlify.app
+https://gerarpalpitesdigitostimemania.netlify.app
+https://gerarpalpitesdigitosdiadesorte.netlify.app
+https://gerarpalpitesdigitosduplasena.netlify.app
+https://gerarpalpitesdigitosfederal.netlify.app
+
+
+https://resumoloteca-i.netlify.ap
+https://resumolotofacil-i.netlify.app
+https://resumolotomania-i.netlify.app
+https://resumomaismilionaria-i.netlify.app
+https://resumoquina-i.netlify.app
+https://resumosupersete-i.netlify.app
+https://resumotimemania-i.netlify.app
+https://resumodiadesorte-i.netlify.app
+https://resumoduplasena-i.netlify.app
+https://resumofederal-i.netlify.app
 
 
 Adicione o link para ver os sorteios ao vivo em um ponto estratégico neste código Pode se chamar "Sorteio Ao Vivo"
