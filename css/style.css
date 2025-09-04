@@ -1,0 +1,106 @@
+        .number-cell {
+            transition: all 0.2s ease;
+            min-width: 40px;
+            min-height: 40px;
+        }
+        .number-cell:hover {
+            transform: scale(1.05);
+        }
+        .selected {
+            background-color: #10b981 !important;
+            color: white;
+        }
+        .tab-active {
+            border-bottom: 3px solid #5D5CDE;
+        }
+        .modal {
+            backdrop-filter: blur(4px);
+        }
+		
+		
+		/* Variáveis de cores das modalidades */
+		:root {
+			--color-megasena: #209869;
+			--color-quina: #260085;
+			--color-lotofacil: #930089;
+			--color-lotomania: #F78100;
+			--color-timemania: #00FF48;
+			--color-duplasena: #A61324;
+			--color-diadesorte: #CB852F;
+			--color-supersete: #A8CF45;
+			--color-loteca: #4A90E2;
+			--color-federal: #4192be;
+			--color-maismilionaria: #31357C;
+			--color-siteoficial: red; /* Azul padrão ou cor desejada */
+		}
+
+		/* Classes auxiliares para cores das modalidades */
+		.text-megasena-link { color: var(--color-megasena) !important; }
+		.text-quina-link { color: var(--color-quina) !important; }
+		.text-lotofacil-link { color: var(--color-lotofacil) !important; }
+		.text-lotomania-link { color: var(--color-lotomania) !important; }
+		.text-timemania-link { color: var(--color-timemania) !important; }
+		.text-duplasena-link { color: var(--color-duplasena) !important; }
+		.text-diadesorte-link { color: var(--color-diadesorte) !important; }
+		.text-supersete-link { color: var(--color-supersete) !important; }
+		.text-loteca-link { color: var(--color-loteca) !important; }
+		.text-federal-link { color: var(--color-federal) !important; }
+		.text-maismilionaria-link { color: var(--color-maismilionaria) !important; }
+		.text-siteoficial-link { color: var(--color-siteoficial) !important; }
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #f4f4f9;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #1b9a67;
+  color: #fff;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background: #f9f9f9;
+}
+
+input.valor {
+  width: 120px;
+  padding: 4px;
+  text-align: right;
+}
+
+.legenda {
+  margin-top: 15px;
+  font-size: 14px;
+  text-align: right;
+}
+.text-site-oficial-link {
+    color: var(--site-oficial-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.text-site-oficial-link:hover {
+    color: darken(var(--site-oficial-color), 15%);
+    text-decoration: underline;
+}

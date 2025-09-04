@@ -1,0 +1,96 @@
+    <style>
+        .number-cell {
+            transition: all 0.2s ease;
+            min-width: 40px;
+            min-height: 40px;
+        }
+        .number-cell:hover {
+            transform: scale(1.05);
+        }
+        .selected {
+            background-color: #10b981 !important;
+            color: white;
+        }
+        .tab-active {
+            border-bottom: 3px solid #5D5CDE;
+        }
+        .modal {
+            backdrop-filter: blur(4px);
+        }
+		/* Variáveis de cores das modalidades */
+		:root {
+			--color-megasena: #209869;
+			--color-quina: #260085;
+			--color-lotofacil: #930089;
+			--color-lotomania: #F78100;
+			--color-timemania: #00FF48;
+			--color-duplasena: #A61324;
+			--color-diadesorte: #CB852F;
+			--color-supersete: #A8CF45;
+			--color-loteca: #4A90E2;
+			--color-federal: #4192be;
+			--color-maismilionaria: #31357C;
+			--color-siteoficial: red; /* Azul padrão ou cor desejada */
+		}
+
+		/* Classes auxiliares para cores das modalidades */
+		.text-megasena-link { color: var(--color-megasena) !important; }
+		.text-quina-link { color: var(--color-quina) !important; }
+		.text-lotofacil-link { color: var(--color-lotofacil) !important; }
+		.text-lotomania-link { color: var(--color-lotomania) !important; }
+		.text-timemania-link { color: var(--color-timemania) !important; }
+		.text-duplasena-link { color: var(--color-duplasena) !important; }
+		.text-diadesorte-link { color: var(--color-diadesorte) !important; }
+		.text-supersete-link { color: var(--color-supersete) !important; }
+		.text-loteca-link { color: var(--color-loteca) !important; }
+		.text-federal-link { color: var(--color-federal) !important; }
+		.text-maismilionaria-link { color: var(--color-maismilionaria) !important; }
+		.text-siteoficial-link { color: var(--color-siteoficial) !important; }
+    </style>
+
+
+
+
+
+quero que vc faça uma tabela em html com style separado .. para mostrar.. 
+
+Modalidades (das loterias) caixa
+Número no volante (Universo de numeros)
+Número de aposta mímino/Valor
+Número de aposta máximo/Valor
+Particularidades (trevo, time do coração)
+Dias de sorteio
+
+O valor de cada modalidade deve ser um imputem formato moeda brasileira em real onde o usuario digita nele e atualiza em cada modalidade espalhada pelo código (<!-- Navigation Tabs -->)o de tem o valor das modalidades
+● Mega-Sena
+● Quina
+● Lotofácil
+● Lotomania
+● Timemania
+● Dupla Sena
+● Dia de Sorte
+● Super Sete
+● Loteca
+● Federal
+● + Milionária
+
+
+
+
+Nos dias por favor abrevie para Qui, Quar etc
+Mega-Sena	Terças, quintas e sábados
+Lotofácil	Segunda a sábado
+Quina	Segunda a sábado
+Timemania	Terças, quintas e sábados
+Loteria Federal	Quartas e sábados
+Dia de Sorte	Terças, quintas e sábados
++Milionária	Quartas e sábados
+
+
+
+
+peço que bm adicione o código html para legenda
+onde as informações serão
+
+G. = Geradores
+A. = Análise
