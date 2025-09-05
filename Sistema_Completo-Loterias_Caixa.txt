@@ -11,8 +11,8 @@ https://i.postimg.cc/cJnzjFzj/federal.png
 https://i.postimg.cc/DywMFvD1/mais-Milionaria.png
 
 
-https://resumomegasena-i.netlify.app/    				Resumo I 	(Resultados Ordem de Sorteio)
-https://resultadosdigitosmegasena.netlify.app/			Resumo 		(Análise de Dígitos)
+https://resumomegasena-i.netlify.app/    				Resumo I 	(A. Ordem Sorteio)
+https://resultadosdigitosmegasena.netlify.app/			Resumo 		(A. de Dígitos)
 
 
 
@@ -132,15 +132,15 @@ https://resultadosdigitosmegasena.netlify.app/			Resumo 		(Análise de Dígitos)
 
 <!-- Loteca -->
 <p>
-    <a href="https://loterias.caixa.gov.br/Paginas/Loteca.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> | 
-    <a href="https://resultadosdigitosloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Análise de Dígitos</b></span></a> |
-    <a href="https://GerarPalpitesIndividualloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Gerador Palpites Individual</b></span></a> |
-    <a href="https://gerarpalpitesdigitosloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Gerador Palpites Completo</b></span></a> |
-    <a href="https://analisevisualloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Análise Visual</b></span></a> |
-    <a href="https://analiseprofissionalloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Análise Profissional</b></span></a> |
-    <a href="https://analisecombinatoriadoisloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Análise Combinatória</b></span></a> |
-    <a href="https://resumoloteca-i.netlify.app" target="_blank"><span style="color:#0066B3"><b>Resultados Ordem de Sorteio</b></span></a> |
-    <a href="https://resultadosalteradosloteca.netlify.app" target="_blank"><span style="color:#0066B3"><b>Resultados Alterados</b></span></a>
+    <a href="https://loterias.caixa.gov.br/Paginas/Loteca.aspx" target="_blank"><span style="color:red">Site Oficial</a> | 
+    <a href="https://resultadosdigitosloteca.netlify.app" target="_blank"><class="text-loteca-link"><b>A. de Dígitos</b></a> |
+    <a href="https://GerarPalpitesIndividualloteca.netlify.app" target="_blank"><class="text-loteca-link"><b>G. Palpites Individual</b></a> |
+    <a href="https://gerarpalpitesdigitosloteca.netlify.app" target="_blank"><class="text-loteca-link"><b>G. Palpites Completo</b></a> |
+    <a href="https://analisevisualloteca.netlify.app" target="_blank"><class="text-loteca-link"><b>A. Visual</b></a> |
+    <a href="https://analiseprofissionalloteca.netlify.app" target="_blank"><class="text-loteca-link"><b>A. Profissional</b></a> |
+    <a href="https://analisecombinatoriadoisloteca.netlify.app" target="_blank"><class="text-loteca-link"><b>A. Combinatória</b></a> |
+    <a href="https://resumoloteca-i.netlify.app" target="_blank"><class="text-loteca-link"><b>A. Ordem Sorteio</b></a> |
+    <a href="https://resultadosalteradosloteca.netlify.app" target="_blank"><class="text-loteca-link"><b>Resultados Alterados</b></a>
     <hr /><br />
 </p>
 
@@ -148,29 +148,29 @@ https://resultadosdigitosmegasena.netlify.app/			Resumo 		(Análise de Dígitos)
 
 <!-- Federal -->
 <p>
-    <a href="https://loterias.caixa.gov.br/Paginas/Federal.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> |
-    <a href="https://resultadosdigitosfederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Análise de Dígitos</b></span></a> |
-    <a href="https://GerarPalpitesIndividualFederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Gerador Palpites Individual</b></span></a> |
-    <a href="https://gerarpalpitesdigitosfederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Gerador Palpites Completo</b></span></a> |
-    <a href="https://analisevisualfederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Análise Visual</b></span></a> |
-    <a href="https://analiseprofissionalfederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Análise Profissional</b></span></a> |
-    <a href="https://analisecombinatoriadoisfederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Análise Combinatória</b></span></a> |
-    <a href="https://resumofederal-i.netlify.app" target="_blank"><span style="color:#4192be"><b>Resultados Ordem de Sorteio</b></span></a> |
-    <a href="https://resultadosalteradosfederal.netlify.app" target="_blank"><span style="color:#4192be"><b>Resultados Alterados</b></span></a>
+    <a href="https://loterias.caixa.gov.br/Paginas/Federal.aspx" target="_blank"><span style="color:red">Site Oficial</a> |
+    <a href="https://resultadosdigitosfederal.netlify.app" target="_blank"><class="text-federal-link"><b>A. de Dígitos</b></a> |
+    <a href="https://GerarPalpitesIndividualFederal.netlify.app" target="_blank"><class="text-federal-link"><b>G. Palpites Individual</b></a> |
+    <a href="https://gerarpalpitesdigitosfederal.netlify.app" target="_blank"><class="text-federal-link"><b>G. Palpites Completo</b></a> |
+    <a href="https://analisevisualfederal.netlify.app" target="_blank"><class="text-federal-link"><b>A. Visual</b></a> |
+    <a href="https://analiseprofissionalfederal.netlify.app" target="_blank"><class="text-federal-link"><b>A. Profissional</b></a> |
+    <a href="https://analisecombinatoriadoisfederal.netlify.app" target="_blank"><class="text-federal-link"><b>A. Combinatória</b></a> |
+    <a href="https://resumofederal-i.netlify.app" target="_blank"><class="text-federal-link"><b>A. Ordem Sorteio</b></a> |
+    <a href="https://resultadosalteradosfederal.netlify.app" target="_blank"><class="text-federal-link"><b>Resultados Alterados</b></a>
     <hr /><br />
 </p>
 
 <!-- Mais Milionária -->
 <p>
-    <a href="https://loterias.caixa.gov.br/Paginas/Mais-Milionaria.aspx" target="_blank"><span style="color:red">Site Oficial</span></a> |
-    <a href="https://resultadosdigitosmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Análise de Dígitos</b></span></a> |
-    <a href="https://GerarPalpitesIndividualMaisMilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Gerador Palpites Individual</b></span></a> |
-    <a href="https://gerarpalpitesdigitosmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Gerador Palpites Completo</b></span></a> |
-    <a href="https://analisevisualmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Análise Visual</b></span></a> |
-    <a href="https://analiseprofissionalmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Análise Profissional</b></span></a> |
-    <a href="https://analisecombinatoriadoismaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Análise Combinatória</b></span></a> |
-    <a href="https://resumomaismilionaria-i.netlify.app" target="_blank"><span style="color:#31357C"><b>Resultados Ordem de Sorteio</b></span></a> |
-    <a href="https://resultadosalteradosmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Resultados Alterados</b></span></a>
+    <a href="https://loterias.caixa.gov.br/Paginas/Mais-Milionaria.aspx" target="_blank"><span style="color:red">Site Oficial</a> |
+    <a href="https://resultadosdigitosmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>A. de Dígitos</b></a> |
+    <a href="https://GerarPalpitesIndividualMaisMilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>G. Palpites Individual</b></a> |
+    <a href="https://gerarpalpitesdigitosmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>G. Palpites Completo</b></a> |
+    <a href="https://analisevisualmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>A. Visual</b></a> |
+    <a href="https://analiseprofissionalmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>A. Profissional</b></a> |
+    <a href="https://analisecombinatoriadoismaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>A. Combinatória</b></a> |
+    <a href="https://resumomaismilionaria-i.netlify.app" target="_blank"><span style="color:#31357C"><b>A. Ordem Sorteio</b></a> |
+    <a href="https://resultadosalteradosmaismilionaria.netlify.app" target="_blank"><span style="color:#31357C"><b>Resultados Alterados</b></a>
     <hr /><br />
 </p>
 
